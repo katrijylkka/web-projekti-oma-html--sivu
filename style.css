@@ -1,0 +1,5 @@
+/*.row > div */
+[class^="col"] {
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
