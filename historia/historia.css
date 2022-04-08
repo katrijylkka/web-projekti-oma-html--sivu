@@ -1,0 +1,14 @@
+[class^="col"]{
+    border: 1px solid black;
+    background-color: lightskyblue;    
+    }
+
+[class^= "question-container"]{
+  display: flex;
+  width: 10px;
+    
+}
+
+[class^= "button"]{
+  background-color: blueviolet;
+}

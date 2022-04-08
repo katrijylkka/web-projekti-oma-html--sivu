@@ -1,46 +1,57 @@
-let questions = [
+
+let MyQuestions = [
     {
         question: "Minkä niminen ilves esiintyi elokuvassa Poika ja ilves?",
-        optionA: "Simo",
-        optionB: "Milo",
-        optionC: "Leevi",
-        optionD: "Simba",
-        correctOption: "optionC"
+        answers: {
+        A: "Simo",
+        B: "Milo",
+        C: "Leevi",
+        D: "Simba",
+        },
+        correctAnswer: "C"
     },
 
     {
         question: "Mikä eläin oli pääosassa elokuvassa Tunteellinen Niko - Lentäjän poika?",
-        optionA: "Karhu",
-        optionB: "Poro",
-        optionC: "Jänis",
-        optionD: "Hirvi",
-        correctOption: "optionB"
+        answers: {
+        A: "Karhu",
+        B: "Poro",
+        C: "Jänis",
+        D: "Hirvi",
+        },
+        correctAnswer: "B"
     },
 
     {
         question: "Minkä nimiset sisarukset näyttelevät Sinikka- ja Tiina Nopolan kirjaan perustuvassa elokuvassa?",
-        optionA: "Lotta ja Suvi",
-        optionB: "Rautahanhi ja Ruohosipuli",
-        optionC: "Sinikka ja Tiina",
-        optionD: "Heinähattu ja Vilttitossu",
-        correctOption: "optionD"
+        answers: {
+        A: "Lotta ja Suvi",
+        B: "Rautahanhi ja Ruohosipuli",
+        C: "Sinikka ja Tiina",
+        D: "Heinähattu ja Vilttitossu",
+        },
+        correctAnswer: "D"
     },
 
     {
         question: "Keneltä Onneli ja Anneli ostavat talon ensimmäisessä elokuvassa?",
-        optionA: "Tingelstiina",
-        optionB: "Rouva Rosina Rusina",
-        optionC: "Rouva Ruusupuu",
-        optionD: "Tangelstiina",
-        correctOption: "optionC"
+        answers: {
+        A: "Tingelstiina",
+        B: "Rouva Rosina Rusina",
+        C: "Rouva Ruusupuu",
+        oD: "Tangelstiina",
+        },
+        correctAnswer: "C"
     },
 
     {
         question: "Minkä tyylinen elokuva on vuonna 2015 ensi-iltansa saanut elokuva Hevisaurus?",
-        optionA: "Komedia",
-        optionB: "Romanttinen",
-        optionC: "Musikaali",
-        optionD: "Seikkailu",
-        correctOption: "optionD"
+        answers: {
+        A: "Komedia",
+        B: "Romanttinen",
+        C: "Musikaali",
+        D: "Seikkailu",
+        },
+        correctAnswer: "D"
     }
 ]
