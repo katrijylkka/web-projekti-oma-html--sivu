@@ -1,0 +1,35 @@
+/*Otsikon muotoilu*/
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    
+    color: #000;  
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#000;
+}
+
+
+/*Navbar muotoilu*/
+[class*="nav"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+/*Palstojen muotoilu*/
+[class*="col"] {
+    color:#000;
+    
+}
+
+
+
+
