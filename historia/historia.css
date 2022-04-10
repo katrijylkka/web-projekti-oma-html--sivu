@@ -122,5 +122,26 @@ background: white;
 
 /*Pelin CSS*/
 
-.choise-container
+.choice-container{
+  background-color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+  width: 100%;
 
+}
+
+.choice-prefix{
+  padding: 10px;
+  color:rgb(155, 155, 192);
+  font-style: bold black; 
+}
+
+.correct {
+  background: greenyellow;
+}
+
+.incorrect{
+background-color: red;
+}
