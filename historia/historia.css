@@ -7,14 +7,30 @@
 
 [class^= "question-container"]{
   display: flex;
-  width: 10px;
-    
+  width: 10px;    
+}
+
+[class^= "navbar"]{
+  margin:auto;
+  padding-left:280px ;
+  padding-right: 280px;
+}
+
+#historiakuva{
+border-radius: 50%;
+width: 70%;
+height: auto;
+display: flex;
+margin: auto;
+display: block;
+
 }
 
 h2{
   font-size:2cm ;
   margin-bottom:50px ;
   text-align: center ;
+  text-decoration: underline;
 }
 
 
@@ -45,7 +61,7 @@ h2{
 }
 
 h1{
-  font-size: 3cm;
+  font-size: 2cm;
   color: aliceblue;
   margin-bottom:4cm;
   text-align: center
