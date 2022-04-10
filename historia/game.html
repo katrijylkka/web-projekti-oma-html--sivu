@@ -13,29 +13,31 @@
     <!-- Navigointi alkaa -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Etusivu</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">aihealue</a>
+                <a class="nav-link" href="luonto.html">Luonto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">aihealue</a>
+                <a class="nav-link" href="historia.html">Historia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >aihealue</a>
+                <a class="nav-link" href="Urheilu" >Urheilu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >aihealue</a>
+                <a class="nav-link" href="pages/musiikki.html" >Musiikki</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >aihealue</a>
+                <a class="nav-link" href="pages/Viihde.html" >Viihde</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/tietoja.html" >Tietoja</a>
               </li>
             </ul>
           </div>
@@ -48,28 +50,73 @@
     <div class="container">
         <!--Tässä On rivi, missä näkyy koko tietovisan nimi-->
         <div class= "row">
-            <div class="col-sm-12">
-                <p>Suomi-visa</p>
+            <div class="col-sm-12" id="otsikkorivi">
+                <h2>Suomi-visa</h2>
             </div>
         </div>
         <!--Tämä on rivi, missä mihin, tulee tietovisa, kuva ja pisteet-->
         <div class= "row">
             <!--Tietovisan oma sarake-->
             <div class="col-sm-6">
-                <p>Historiavisa</p>
                 <div class="container">
-                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores natus est in tempora ipsum non cupiditate dolorem, aperiam eligendi et expedita. Optio fugiat sit, vero illum voluptatibus officia cumque ipsam?</p>     
+                  <div class="container">
+                    <div class="container" id="pelicontainer">
+                      <div id="game" class="flex-colum flex-center"></div>
+                        <div id="hud">
+                           <div class="hud-item">
+                               <p id="progreessText" class="hud-prefix">
+                                    Kysymys
+                               </p>
+                                <div id="progressBar">
+                                    <div id="progressBarFull"></div>
+                                </div>   
+                           </div>
+                           <div class="hud-item">
+                                <p class="hud-prefix">
+                                    Pisteet
+                                </p>
+                                <h1 class="hud-main-text" id="score">
+                                    0
+                                </h1>
+                            </div>   
+                        </div>
+                    <div id="question">Kysymys johon tarvitaan vastaus</div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 1</p>
+                    </div> 
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 4</p>
+                    </div>   
+                    </div>     
+                </div>   
                 </div>   
             </div>
             <!--Kuva ja pisteiden oma sarake-->
             <div class="col-sm-6">
                 <!--Tähän riville kuva-->
                 <div class="row">
-                   Tähän pisteet 
+                   <h1>Pisteet</h1>
+                   <div id="Edistyminen">
+                    <div id= "Täysiedistyminen"></div>
+                </div>
+                <div class="mika-item"
+                    <p class= "hud-prefix"></p>
+                    <h3 class= "mika-paa-teksti" id="score">0</h3>
+            </div>
                     
                 </div>
                 <div class="row">
-                    <img src="images/historia.jpg" alt="historiankuva" id="main image">
+                    <img src="images/historia.jpg" alt="historiankuva" id="historiakuva">
 
                     <br>
                     <br>
