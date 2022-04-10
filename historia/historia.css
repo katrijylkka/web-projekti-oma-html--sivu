@@ -11,15 +11,24 @@
     
 }
 
+h2{
+  font-size:2cm ;
+  margin-bottom:50px ;
+  text-align: center ;
+}
+
+
+
 /*Peli- container tyylit */
 
 /*Napit*/
 
 .button{
- font-size: 20px;
- padding: 5px ;
+  
+ font-size: 25px;
+ padding: 50px ;
  text-align: center ;
- margin-bottom: 10px ;
+ margin-top: 40;
  text-decoration: none;
  color:rgb(247, 246, 246);
  background: blue ;
@@ -28,31 +37,31 @@
 
 #pisteet-button{
   background: rgb(247, 246, 246);
-  font-size: 20px;
+  text-align: center ;
+  padding: 50px; ;
+  font-size: 25px;
   color: black;
   border: 1px solid blue;
 }
 
 h1{
-  font-size: 1cm;
+  font-size: 3cm;
   color: aliceblue;
-  margin-bottom:1cm;
+  margin-bottom:4cm;
   text-align: center
 }
 
-h2{
-  font-size: ;
-  margin-bottom: ;
-}
 
-.pelicontainer:{
+
+.pelicontainer {
 width:fit-content;
 height: fit-content;
 display: flex;
 justify-content: center;
 align-items: center;
-max-width: ;
-margin: ;
+max-width:50px ;
+margin: 50px;
+background: white;
 } 
 
 .flex-column{
