@@ -12,11 +12,17 @@
 
 [class^= "navbar"]{
   margin:auto;
-  padding-left:280px ;
-  padding-right: 280px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 40px;
+}
+
+
+h4{
+  text-align: center;
+  font-size: 100px;
+  color: rgb(151, 168, 183);
+  margin-bottom: 30px ;
 }
 
 h3{
