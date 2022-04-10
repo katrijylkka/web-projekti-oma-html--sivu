@@ -1,3 +1,5 @@
+/* html- sivun tyylit */
+
 [class^="col"]{
     border: 1px solid black;
     background-color: lightskyblue;    
@@ -9,6 +11,70 @@
     
 }
 
-[class^= "button"]{
-  background-color: blueviolet;
+/*Peli- container tyylit */
+
+/*Napit*/
+
+.button{
+ font-size: 20px;
+ padding: 5px ;
+ text-align: center ;
+ margin-bottom: 10px ;
+ text-decoration: none;
+ color:rgb(247, 246, 246);
+ background: blue ;
+ border-radius: 4px;
 }
+
+#pisteet-button{
+  background: rgb(247, 246, 246);
+  font-size: 20px;
+  color: black;
+  border: 1px solid blue;
+}
+
+h1{
+  font-size: 1cm;
+  color: aliceblue;
+  margin-bottom:1cm;
+  text-align: center
+}
+
+h2{
+  font-size: ;
+  margin-bottom: ;
+}
+
+.pelicontainer:{
+width:fit-content;
+height: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: ;
+margin: ;
+} 
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
