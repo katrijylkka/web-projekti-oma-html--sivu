@@ -44,10 +44,7 @@
         </div>
       </nav>
       <!--Navigointi päättyy-->
-
-      <!---->
       <h4>Historia</h4>
-
       <!--Sisältö alkaa-->
       <!--Pää Container-->
     <div class="container">
@@ -64,10 +61,42 @@
                 <div class="container">
                   <div class="container">
                     <div class="container" id="pelicontainer">
-                      <div id="home" class="flex-colum flex-center"></div>
-                      <h1>Aloitetaan!</h1>
-                      <a href="/game.html" class="button">Pelaamaamaan!</a>
-                      <a href="/game.html" id="pisteet-button" class="button">Pistetaulukko<i class="fas fa-crown"></i></a>
+                      <div id="game" class="flex-colum flex-center"></div>
+                        <div id="hud">
+                           <div class="hud-item">
+                               <p id="progreessText" class="hud-prefix">
+                                    Kysymys
+                               </p>
+                                <div id="progressBar">
+                                    <div id="progressBarFull"></div>
+                                </div>   
+                           </div>
+                           <div class="hud-item">
+                                <p class="hud-prefix">
+                                    Pisteet
+                                </p>
+                                <h1 class="hud-main-text" id="score">
+                                    0
+                                </h1>
+                            </div>   
+                        </div>
+                    <div id="question">Kysymys johon tarvitaan vastaus</div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 1</p>
+                    </div> 
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="1">Vaihtoehto 4</p>
+                    </div>   
                     </div>     
                 </div>   
                 </div>   
