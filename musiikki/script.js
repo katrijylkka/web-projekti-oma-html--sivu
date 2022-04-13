@@ -62,10 +62,10 @@ function calcScore(e){
     if(e.innerHTML===kysymysPatteri[i].answer && score<kysymysPatteri.length)
     {
         score= score+1;
-        document.getElementById(e.id).style.background= 'green';
+        document.getElementById(e.id).style.background= 'lime';
     }
     else{
-        document.getElementById(e.id).style.background= 'red';
+        document.getElementById(e.id).style.background= 'crimson';
     }
     setTimeout(nextQuestion,1000);
 }
