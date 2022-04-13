@@ -4,59 +4,156 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Viihde</title>
+    <link rel="stylesheet" href="/Viihde/style.css">
+    <title>Viihde
+    </title>
   </head>
-  <body>
-         <!-- Navigointi alkaa -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body onload="NextQuestion(0)">
+    <main>
+      <!-- Navigointi alkaa -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
+          <a class="navbar-brand" href="#">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Etusivu</a>
+                <a class="nav-link active" aria-current="page" href="#">Etusivu
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Luonto</a>
+                <a class="nav-link" href="#">Luonto
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Historia</a>
+                <a class="nav-link" href="#">Historia
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >Urheilu</a>
+                <a class="nav-link" href="#" >Urheilu
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >Musiikki</a>
+                <a class="nav-link" href="#" >Musiikki
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >Viihde</a>
+                <a class="nav-link" href="#" >Viihde
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >Tietoja</a>
+                <a class="nav-link" href="#" >Tietoja
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    <h1>Viihdevisa</h1>
-    <h2>Suomalaiset lastenlokuvat</h2>
-
-    <div id="viihdevisa"></div>
-  <button id="submit">Submit Quiz</button>
-  <div id="results"></div>
-  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/Viihde/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <div id="tietoVisa">
+        <h1>Viihdevisa
+        </h1>
+        <h2>Suomalaiset lastenlokuvat
+        </h2>
+        <div id="tietoVisa">
+          <div class="modal-container" id="score-modal">
+            <div class="modal-content-container">
+              <h1>Hei, suoritit tietovisan!
+              </h1>
+              <!-- Pistetaulukon rakenne alkaa -->
+              <div class="grade-details">
+                <p>Väärät vastaukset : 
+                  <span id="wrong-answers">
+                  </span>
+                </p>
+                <p>Oikeat vastaukset : 
+                  <span id="right-answers">
+                  </span>
+                </p>
+                <p>Pisteet : 
+                  <span id="grade-percentage">
+                  </span>% oikein
+                </p>
+                <p >
+                  <span id="remarks">
+                  </span>
+                </p>
+              </div>
+              <div class="modal-button-container">
+                <button onclick="closeScoreModal()">Aloita alusta
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Tietovisan rakenne alkaa -->
+          <div class="game-quiz-container">
+            <div class="game-details-container">
+              <h1>Pisteet : 
+                <span id="player-score">
+                </span> / 5
+              </h1>
+              <h1> Kysymys : 
+                <span id="question-number">
+                </span> / 5
+              </h1>
+            </div>
+            <div class="game-question-container">
+              <h1 id="display-question">
+              </h1>
+            </div>
+            <div class="game-options-container">
+              <div class="modal-container" id="option-modal">
+                <div class="modal-content-container">
+                  <h1>Valitse vaihtoehto!
+                  </h1>
+                  <div class="modal-button-container">
+                    <button onclick="closeOptionModal()">Jatka
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <span>
+                <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                <label for="option-one" class="option" id="option-one-label">
+                </label>
+              </span>
+              <span>
+                <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                <label for="option-two" class="option" id="option-two-label">
+                </label>
+              </span>
+              <span>
+                <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                <label for="option-three" class="option" id="option-three-label">
+                </label>
+              </span>
+              <span>
+                <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                <label for="option-four" class="option" id="option-four-label">
+                </label>
+              </span>
+            </div>
+            <div class="next-button-container">
+              <button onclick="handleNextQuestion()">Seuraava
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="/Viihde/script.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        </main>
+      </body>
+    </html>
