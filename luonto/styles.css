@@ -24,7 +24,7 @@ h4 {
 /*Palstojen muotoilu*/
 [class*="col-sm"] {
     color:white;
-    background-color: rgb(0, 80, 181);
+    background-color: lightskyblue;
 }
 
 /*Taustaväri sivulle*/
