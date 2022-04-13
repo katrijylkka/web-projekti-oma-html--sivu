@@ -84,10 +84,10 @@ function nextQuestion(){
     }
 }
 
-//Seuraava -nappi
+//Seuraava -napin toiminta
 next.addEventListener('click',nextQuestion);
 
-//Takaisin -nappi
+//Takaisin -napin toiminta
 function backToQuiz(){
     location.reload();
 }
