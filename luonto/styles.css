@@ -1,21 +1,19 @@
-/*Otsikon muotoilu*/
+/*Otsikoiden muotoilu*/
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    
-    color: #000;  
+    color: white;  
 }
 
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #000;
+    color: white;
 }
 
 h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#000;
+    color:white;
 }
-
 
 /*Navbar muotoilu*/
 [class*="nav"] {
@@ -23,13 +21,22 @@ h4 {
     
 }
 
-
 /*Palstojen muotoilu*/
-[class*="col"] {
-    color:#000;
-    
+[class*="col-sm"] {
+    color:white;
+    background-color: lightskyblue;
 }
 
+/*Taustaväri sivulle*/
+body {
+    background-color: #F8F9FA;
+}
+
+/*Tekijä*/
+footer{
+    padding-top: 50px;
+    text-align: center;
+}
 
 
 

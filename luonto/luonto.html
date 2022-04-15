@@ -13,8 +13,7 @@
     <title>Luonto tietovisa</title>
   </head>
   <body>
-
-      <!--Navbar-->
+    <!--Navbar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Etusivu</a>
+                <a class="nav-link" href="../index/index.html">Etusivu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Historia</a>
@@ -41,58 +40,61 @@
                 <a class="nav-link" href="#">Viihde</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tietoja</a>
+                <a class="nav-link" href="../tietoja.html">Tietoja</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <br>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12"></div>
+          <div class="col-sm-12">
           <h1>Suomi tietovisa</h1>
+          <h2>Luonto</h2>
         </div>
       </div>
+    </div>
       
-      <div class="container">
-        <div class="row">
-          
-          <!--Kysymykset ja vastausvaihtoehdot-->
-          <div class="col-sm-8">
-            <h2>Luonto</h2>
-            <!--Ensimmäinen kysymys-->
-            <p>Kauanko karhut nukkuvat talviunta?</p>
-            <input type="radio" id="talviuni1" name="karhu" value="6kk">
-            <label for="talviuni1">6 kuukautta</label><br>
-            <input type="radio" id="talviuni2" name="karhu" value="3kk">
-            <label for="talviuni2">3 kuukautta</label><br>
-            <input type="radio" id="talviuni3" name="karhu" value="0kk">
-            <label for="talviuni3">Karhut eivät nuku talviunta!</label><br>
-            <br>
-            <input type="submit" value="Vastaa"><br>
-            <br>
-             <!--Toinen kysymys-->
-             <p>Mikä on Suomen suurin lintu?</p>
-             <input type="radio" id="lintu1" name="lintu" value="joutsen">
-             <label for="lintu1">Joutsen</label><br>
-             <input type="radio" id="lintu2" name="lintu" value="hanhi">
-             <label for="lintu2">Hanhi</label><br>
-             <input type="radio" id="lintu3" name="lintu" value="merikotka">
-             <label for="lintu3">Merikotka</label><br>
-             <br>
-             <input type="submit" value="Vastaa"><br>
-             <br>
-             <!--Kolmas kysymys-->
-            <p>Mikä on Suomen vaarallisin eläin?</p>
-            <input type="radio" id="tappavin1" name="tappavin" value="susi">
-            <label for="tappavin1">Susi</label><br>
-            <input type="radio" id="tappavin2" name="tappavin" value="karhu">
-            <label for="tappavin2">Karhu</label><br>
-            <input type="radio" id="tappavin3" name="tappavin" value="ampiainen">
-            <label for="tappavin3">Ampiainen</label><br>
-            <br>
-            <input type="submit" value="Vastaa"><br>
-            <br>
+    <div class="container">
+      <div class="row">
+        <!--Kysymykset ja vastausvaihtoehdot-->
+        <div class="col-sm-4">
+          <!--Ensimmäinen kysymys-->
+          <p>Kauanko karhut nukkuvat talviunta?</p>
+          <input type="radio" id="talviuni1" name="karhu" value="6kk">
+          <label for="talviuni1">6 kuukautta</label><br>
+          <input type="radio" id="talviuni2" name="karhu" value="3kk">
+          <label for="talviuni2">3 kuukautta</label><br>
+          <input type="radio" id="talviuni3" name="karhu" value="0kk">
+          <label for="talviuni3">Karhut eivät nuku talviunta!</label><br>
+          <br>
+          <input type="submit" value="Vastaa 1/5"><br>
+          <br>
+          <!--Toinen kysymys-->
+          <p>Mikä on Suomen suurin lintu?</p>
+          <input type="radio" id="lintu1" name="lintu" value="joutsen">
+          <label for="lintu1">Joutsen</label><br>
+          <input type="radio" id="lintu2" name="lintu" value="hanhi">
+          <label for="lintu2">Hanhi</label><br>
+          <input type="radio" id="lintu3" name="lintu" value="merikotka">
+          <label for="lintu3">Merikotka</label><br>
+          <br>
+          <input type="submit" value="Vastaa 2/5"><br>
+          <br>
+          <!--Kolmas kysymys-->
+          <p>Mikä on Suomen vaarallisin eläin?</p>
+          <input type="radio" id="tappavin1" name="tappavin" value="susi">
+          <label for="tappavin1">Susi</label><br>
+          <input type="radio" id="tappavin2" name="tappavin" value="karhu">
+          <label for="tappavin2">Karhu</label><br>
+          <input type="radio" id="tappavin3" name="tappavin" value="ampiainen">
+          <label for="tappavin3">Ampiainen</label><br>
+          <br>
+          <input type="submit" value="Vastaa 3/5"><br>
+          <br>
+        </div>
+          <div class="col-sm-4">
             <!--Neljäs kysymys-->
             <p>Mikä on Suomen yleisin puulaji?</p>
             <input type="radio" id="puulaji1" name="puu" value="mänty">
@@ -102,7 +104,7 @@
             <input type="radio" id="puulaji3" name="puu" value="vaahtera">
             <label for="puulaji3">Vaahtera</label><br>
             <br>
-            <input type="submit" value="Vastaa"><br>
+            <input type="submit" value="Vastaa 4/5"><br>
             <br>
             <!--Viides kysymys-->
             <p>Kuinka pitkä Suomi on?</p>
@@ -113,28 +115,20 @@
             <input type="radio" id="pituus3" name="suomi" value="1360km">
             <label for="pituus3">1360km</label><br>
             <br>
-            <input type="submit" value="Vastaa"><br>
+            <input type="submit" value="Vastaa 5/5"><br>
             <br>
-            
           </div>
-          
           <!--Pisteet ja selitys-->
-          <div class="col-sm-4">
-            <div class="row">
-              <div class="col">
-                <h4>Sinun pisteesi:</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora nam soluta veritatis exercitationem totam debitis ab mollitia inventore. Dignissimos eveniet neque voluptatum vitae facere incidunt, ratione voluptas suscipit molestias.</p>
-              </div>
-            </div>
-              <!--Kuva-->
-              <img src="images/luonto.jpg" class="img-fluid" alt="Luonto aiheinen kuva">
-              <a href="https://pixabay.com/photos/moose-trees-forest-wildlife-autumn-6704543/" target="_new">Pixabay-Moose</a>
-          </div>
+        <div class="col-sm-4">
+            <h4>Sinun pisteesi:</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora nam soluta veritatis exercitationem totam debitis ab mollitia inventore. Dignissimos eveniet neque voluptatum vitae facere incidunt, ratione voluptas suscipit molestias.</p>
+          <!--Kuva-->
+          <img src="images/luonto.jpg" class="img-fluid" alt="Luonto aiheinen kuva">
+          <a href="https://pixabay.com/photos/moose-trees-forest-wildlife-autumn-6704543/" target="_new">(Pixabay 2022.)</a>
         </div>
       </div>
-      
-
-
+    </div>  
+          
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -145,5 +139,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <footer>
+      Valtteri Jaskari, 2022
+    </footer>
   </body>
 </html>
