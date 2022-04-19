@@ -56,65 +56,65 @@
         </div>
         <!--Tämä on rivi, missä mihin, tulee tietovisa, kuva ja pisteet-->
         <div class= "row">
-            <!--Tietovisan oma sarake-->
-            <div class="col-sm-6">
-                <div class="container">
-                  <div class="container">
-                    <div class="container" id="pelicontainer">
-                      <div id="game" class="flex-colum flex-center"></div>
-                        <div id="hud">
-                           <div class="hud-item">
-                               <p id="progreessText" class="hud-prefix">
-                                    Kysymys
-                               </p>
-                                <div id="progressBar">
-                                    <div id="progressBarFull"></div>
-                                </div>   
-                           </div>
-                           <div class="hud-item">
-                                <p class="hud-prefix">
-                                    Pisteet
-                                </p>
-                                <h1 class="hud-main-text" id="score">
-                                    0
-                                </h1>
-                            </div>   
-                        </div>
-                    <div id="question">Kysymys johon tarvitaan vastaus</div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">A</p>
-                        <p class="choice-text" data-number="1">Vaihtoehto 1</p>
-                    </div> 
-                    <div class="choice-container">
-                        <p class="choice-prefix">B</p>
-                        <p class="choice-text" data-number="1">Vaihtoehto 2</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">C</p>
-                        <p class="choice-text" data-number="1">Vaihtoehto 3</p>
-                    </div>
-                    <div class="choice-container">
-                        <p class="choice-prefix">D</p>
-                        <p class="choice-text" data-number="1">Vaihtoehto 4</p>
-                    </div>   
-                    </div>     
-                </div>   
-                </div>   
-            </div>
+          <!--Tietovisan oma sarake-->
+          <div class="col-sm-6">
+            <form id = "quiz" name = "quiz">
+
+
+              
+              <p class = "questions">Mikä seuraavista on toiminut suomen epävirallisena pääkaupunkina ennen Helsinkiä?</p>
+                <input type = "radio" id = "mc" name = "question1" value = "porvoo"> Porvoo
+                <input type = "radio" id = "mc" name = "question1" value = "kokkola"> Kokkola
+                <input type = "radio" id = "mc" name = "question1" value = "turku"> Turku
+                <input type = "radio" id = "mc" name = "question1" value = "eimikaan"> Ei mikään seuraavista
+              <br>
+              <br>
+              <p class = "questions">Mikä valuutta Suomessa käytössä, ennen euron käyttöönottoa?</p>
+                <input type = "radio" id = "mc" name = "question2" value = "raha"> Raha
+                <input type = "radio" id = "mc" name = "question2" value = "markka"> Markka
+                <input type = "radio" id = "mc" name = "question2" value = "kruunu"> Kruunu
+                <input type = "radio" id = "mc" name = "question2" value = "punta"> Punta
+              <br>
+              <br>
+              <p class = "questions">Väinö Linna oli yksi Suomen tunnetuimmista kirjailijoista, yksi hänen teoksistaan on:</p>
+                <input type = "radio" id = "mc" name = "question3" value = "uusitestamentti"> Uusi testamentti
+                <input type = "radio" id = "mc" name = "question3" value = "tuntematonsotilas"> Tuntematon sotilas
+                <input type = "radio" id = "mc" name = "question3" value = "kalevala"> Kalevala
+                <input type = "radio" id = "mc" name = "question3" value = "seitsemanveljesta"> Seitsemän veljestä
+              <br>
+              <br>
+              <p class = "questions">Kuka seuraavista on toiminut Suomen presidenttinä?</p>
+                <input type = "radio" id = "mc" name = "question4" value = "sibelius"> Jean Sibelius
+                <input type = "radio" id = "mc" name = "question4" value = "svinhufvud"> Pehr Evind svinhufvud
+                <input type = "radio" id = "mc" name = "question4" value = "nurmi"> Paavo Nurmi
+                <input type = "radio" id = "mc" name = "question4" value = "taalasmaa"> Ulla Taalasmaa
+              <br>
+              <br>
+              <p class = "questions">Minä vuonna Suomi itsenäistyi</p>
+                <input type = "radio" id = "mc" name = "question5" value = "1917"> 1917
+                <input type = "radio" id = "mc" name = "question5" value = "1936"> 1936
+                <input type = "radio" id = "mc" name = "question5" value = "1944"> 1944
+                <input type = "radio" id = "mc" name = "question5" value = "2019"> 2019
+              <br>
+              <br>
+              <input id = "button" type = "button" value = "PALAUTA VASTAUKSET" onclick = "check();">
+              
+              
+              </form>
+              
+              <div id = "after_submit">
+              <p id = "number_correct"></p>
+              <p id = "message"></p>
+              <img id = "picture">
+              </div>
+            
+          </div>  
+
             <!--Kuva ja pisteiden oma sarake-->
             <div class="col-sm-6">
-                <!--Tähän riville kuva-->
+                <!--Tähän riville Edistyminen-->
                 <div class="row">
-                   <h1>Pisteet</h1>
-                   <div id="Edistyminen">
-                    <div id= "Täysiedistyminen"></div>
-                </div>
-                <div class="mika-item"
-                    <p class= "hud-prefix"></p>
-                    <h3 class= "mika-paa-teksti" id="score">0</h3>
-            </div>
-                    
-                </div>
+                </div>    
                 <div class="row">
                     <img src="images/historia.jpg" alt="historiankuva" id="historiakuva">
 
@@ -129,6 +129,6 @@
     <!--Bootstrapin JS-tiedosto-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--Historian oma script-->
-    <script src="js/historiascript.js"></script>   
+    <script src="historiascript.js"></script>   
 </body>
 </html>
