@@ -10,7 +10,7 @@
     <title>Viihde
     </title>
   </head>
-  <body onload="NextQuestion(0)">
+  <body onload="myNextQuestion(0)">
     <main>
       <!-- Navigointi alkaa -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,12 +55,11 @@
           </div>
         </div>
       </nav>
-      <div id="tietoVisa">
-        <h1>Viihdevisa
-        </h1>
-        <h2>Suomalaiset lastenlokuvat
-        </h2>
         <div id="tietoVisa">
+          <h1>Viihdevisa
+          </h1>
+          <h2>Suomalaiset lastenlokuvat
+          </h2>
           <div class="modal-container" id="score-modal">
             <div class="modal-content-container">
               <h1>Hei, suoritit tietovisan!
@@ -93,7 +92,7 @@
           <!-- Tietovisan rakenne alkaa -->
           <div class="game-quiz-container">
             <div class="game-details-container">
-              <h1>Pisteet : 
+              <h1> Pisteet : 
                 <span id="player-score">
                 </span> / 5
               </h1>
@@ -139,7 +138,7 @@
               </span>
             </div>
             <div class="next-button-container">
-              <button onclick="handleNextQuestion()">Seuraava
+              <button onclick="handlemyNextQuestion()">Seuraava
               </button>
             </div>
           </div>
