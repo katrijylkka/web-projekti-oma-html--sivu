@@ -17,7 +17,8 @@
 
 body {
     font-family: sans-serif;
-    background: linear-gradient(70deg, lightskyblue,#DCDCDC);
+    background: url(/musiikki/elvis.jpg);
+    color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +28,7 @@ body {
 h1{
   text-align: center;
   font-size: 100px;
-  color: SlateGrey;
+  color: WhiteSmoke;
   margin-bottom: 30px ;
 }
 
@@ -64,7 +65,8 @@ button{
 }
 #scoreboard{
     width: 20rem;
-    background: #F5F5DC;
+    background: url(/musiikki/soittaja1.jpg);
+    color: white;
     padding: 2rem;
     text-align: center;
     margin: auto;
@@ -74,7 +76,8 @@ button{
 }
 #answerBank{
     width: 20rem;
-    background: #F5F5DC;
+    background: url(/musiikki/apinaorkesteri.jpg);
+    color: white;
     padding: 2rem;
     text-align: center;
     margin: auto;
