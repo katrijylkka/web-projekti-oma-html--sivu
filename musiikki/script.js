@@ -65,7 +65,7 @@ function calcScore(e){
         document.getElementById(e.id).style.background= 'lime';
     }
     else{
-        document.getElementById(e.id).style.background= 'crimson';
+        document.getElementById(e.id).style.background= 'red';
     }
     setTimeout(nextQuestion,1000);
 }
