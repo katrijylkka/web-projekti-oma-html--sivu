@@ -190,9 +190,9 @@ function closeScoreModal() {
     indexNumber = 0
     shuffledQuestions = []
     myNextQuestion(indexNumber)
-    document.getElementById('score-modal').style.display = ""
+    document.getElementById('score-modal').style.display = "none"
 }
 
 function closeOptionModal() {
-    document.getElementById('option-modal').style.display = ""
+    document.getElementById('option-modal').style.display = "none"
 }
