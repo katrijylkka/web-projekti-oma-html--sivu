@@ -4,6 +4,7 @@ h1 {
     font-size: 50px;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
 
 h2 {
@@ -11,31 +12,35 @@ h2 {
     color: white;
     text-align: center;
     padding-bottom: 20px;
+    text-shadow: 2px 2px 4px black;
 }
 
 h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:white;
+    color: black;
 }
 
 /*Navbar muotoilu*/
-[class*="nav"] {
+[class^="navbar"] {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px white;
     
 }
 
 /*Palstojen muotoilu*/
 [class*="col"] {
-    color:white;
+    color:black;
     background-color: lightskyblue;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-[class^= "navbar"]{
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 40px;
-}
+
 
 /*Taustaväri sivulle*/
 body {
