@@ -69,7 +69,6 @@ function myNextQuestion(index) {
     myQuestions()
     let currentQuestion = vaihtuvatKysymykset[index]
     document.getElementById("question-number").innerHTML = questionNumber
-    document.getElementById("player-score").innerHTML = playerScore
     document.getElementById("display-question").innerHTML = currentQuestion.question;
     document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
@@ -188,11 +187,11 @@ function closeScoreModal() {
     playerScore = 0
     wrongAttempt = 0
     indexNumber = 0
-    shuffledQuestions = []
+    vaihtuvatKysymykset = []
     myNextQuestion(indexNumber)
-    document.getElementById('score-modal').style.display = ""
+    document.getElementById('score-modal').style.display = "none"
 }
 
 function closeOptionModal() {
-    document.getElementById('option-modal').style.display = ""
+    document.getElementById('option-modal').style.display = "none"
 }
