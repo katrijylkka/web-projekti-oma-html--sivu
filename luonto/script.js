@@ -1,13 +1,21 @@
 const vaarin = "Vastauksesi on väärin, oikea vastaus on: ";
 const oikein = "Vastauksesi on oikein!";
 const tyhja = "Et vastannut kysymykseen..";
-/*function f01() {
-    let karhuVastaus = 6;
-    if(karhuVastaus == 6) {
-        document.getElementById("tulos").innerHTML = oikein;
-    }
-}*/
-//Tarkistetaan onko vastattu, onko vastaus oikein vai onko onko vastaus väärin, ja annetaan palaute.
+
+//https://stackoverflow.com/questions/28535226/javascript-how-to-show-the-next-div-and-hide-the-previous-one
+var questionNumber=0;
+    var questions=document.querySelectorAll('.question');
+            function next(){
+              questionNumber++;
+              if(questions.length>questionNumber)
+              {
+                    document.querySelector('.active').classList.remove('active');
+              		questions[questionNumber].classList.add('active');
+              }
+            }
+
+
+//Tarkistetaan onko vastattu, onko vastaus oikein vai väärin, ja annetaan palaute.
 function f01() {
     //kysymys 1
     
@@ -24,6 +32,8 @@ function f01() {
         document.getElementById("talviuni1").disabled = true;
         document.getElementById("talviuni2").disabled = true;
         document.getElementById("talviuni3").disabled = true;
+    }
+function f02() {
       
       //kysymys2
       if(document.getElementById("lintu3").checked) {
@@ -37,7 +47,9 @@ function f01() {
         document.getElementById("lintu1").disabled = true;
         document.getElementById("lintu2").disabled = true;
         document.getElementById("lintu3").disabled = true;
+      }
 
+function f03(){
       //kysymys3
       if(document.getElementById("tappavin3").checked) {
         document.getElementById("tulos3").innerHTML= oikein;
@@ -50,7 +62,9 @@ function f01() {
         document.getElementById("tappavin1").disabled = true;
         document.getElementById("tappavin2").disabled = true;
         document.getElementById("tappavin3").disabled = true;  
+      }
 
+function f04() {
       //kysymys4
       if(document.getElementById("puulaji1").checked) {
         document.getElementById("tulos4").innerHTML= oikein;
@@ -63,7 +77,9 @@ function f01() {
         document.getElementById("puulaji1").disabled = true;
         document.getElementById("puulaji2").disabled = true;
         document.getElementById("puulaji3").disabled = true;
+    }
 
+ function f05() {   
       //kysymys5
       if(document.getElementById("pituus2").checked) {
         document.getElementById("tulos5").innerHTML= oikein;
@@ -76,4 +92,6 @@ function f01() {
         document.getElementById("pituus1").disabled = true;
         document.getElementById("pituus2").disabled = true;
         document.getElementById("pituus3").disabled = true;
+        
 }
+

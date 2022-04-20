@@ -59,46 +59,62 @@
     <div class="container">
       <div class="row">
         <!--Kysymykset ja vastausvaihtoehdot-->
-        <div class="col-sm-5">
+        <div class="col-sm-7">
           <!--Ensimmäinen kysymys-->
-          <p>Kauanko karhut nukkuvat talviunta?</p>
-          <input type="radio" id="talviuni1" name="karhu" value="6">
-          <label for="talviuni1">6 kuukautta</label><br>
-          <input type="radio" id="talviuni2" name="karhu" value="3">
-          <label for="talviuni2">3 kuukautta</label><br>
-          <input type="radio" id="talviuni3" name="karhu" value="0">
-          <label for="talviuni3">Karhut eivät nuku talviunta!</label><br>
-          <br>
-          <p id="tulos"></p>
-          <button type="button" onclick="f01()">Tarkista</button>
-          <br>
+          <div id="q0" class="question active">
+            <h4>1/5</h4>
+            <p>Kauanko karhut nukkuvat talviunta?</p>
+            <input type="radio" id="talviuni1" name="karhu" value="6">
+            <label for="talviuni1">6 kuukautta</label><br>
+            <input type="radio" id="talviuni2" name="karhu" value="3">
+            <label for="talviuni2">3 kuukautta</label><br>
+            <input type="radio" id="talviuni3" name="karhu" value="0">
+            <label for="talviuni3">Karhut eivät nuku talviunta!</label><br>
+            <br>
+            <button type="button" onclick="f01()">Tarkista vastaus</button>
+            <br>
+            <p id="tulos"></p>
+            <br>
+            <button onclick="next()">Seuraava</button>
+          </div>
+          
           <!--Toinen kysymys-->
-          <p>Mikä on Suomen suurin lintu?</p>
-          <input type="radio" id="lintu1" name="lintu" value="joutsen">
-          <label for="lintu1">Joutsen</label><br>
-          <input type="radio" id="lintu2" name="lintu" value="hanhi">
-          <label for="lintu2">Hanhi</label><br>
-          <input type="radio" id="lintu3" name="lintu" value="merikotka">
-          <label for="lintu3">Merikotka</label><br>
-          <br>
-          <p id="tulos2"></p>
-          <input type="submit" value="Vastaa 2/5"><br>
-          <br>
+          <div id="q1" class="question">
+            <h4>2/5</h4>
+            <p>Mikä on Suomen suurin lintu?</p>
+            <input type="radio" id="lintu1" name="lintu" value="joutsen">
+            <label for="lintu1">Joutsen</label><br>
+            <input type="radio" id="lintu2" name="lintu" value="hanhi">
+            <label for="lintu2">Hanhi</label><br>
+            <input type="radio" id="lintu3" name="lintu" value="merikotka">
+            <label for="lintu3">Merikotka</label><br>
+            <br>
+            <button type="button" onclick="f02()">Tarkista vastaus</button>
+            <br>
+            <p id="tulos2"></p>
+            <br>
+            <button onclick="next()">Seuraava</button>
+          </div>
           <!--Kolmas kysymys-->
-          <p>Mikä on Suomen vaarallisin eläin?</p>
-          <input type="radio" id="tappavin1" name="tappavin" value="susi">
-          <label for="tappavin1">Susi</label><br>
-          <input type="radio" id="tappavin2" name="tappavin" value="karhu">
-          <label for="tappavin2">Karhu</label><br>
-          <input type="radio" id="tappavin3" name="tappavin" value="ampiainen">
-          <label for="tappavin3">Ampiainen</label><br>
-          <br>
-          <p id="tulos3"></p>
-          <input type="submit" value="Vastaa 3/5"><br>
-          <br>
-        </div>
-          <div class="col-sm-4">
+          <div id="q2" class="question">
+            <h4>3/5</h4>
+            <p>Mikä on Suomen vaarallisin eläin?</p>
+            <input type="radio" id="tappavin1" name="tappavin" value="susi">
+            <label for="tappavin1">Susi</label><br>
+            <input type="radio" id="tappavin2" name="tappavin" value="karhu">
+            <label for="tappavin2">Karhu</label><br>
+            <input type="radio" id="tappavin3" name="tappavin" value="ampiainen">
+            <label for="tappavin3">Ampiainen</label><br>
+            <br>
+            <button type="button" onclick="f03()">Tarkista vastaus</button>
+            <br>
+            <p id="tulos3"></p>
+            <br>
+            <button onclick="next()">Seuraava</button>
+          </div>
             <!--Neljäs kysymys-->
+          <div id="q3" class="question">
+            <h4>4/5</h4>
             <p>Mikä on Suomen yleisin puulaji?</p>
             <input type="radio" id="puulaji1" name="puu" value="mänty">
             <label for="puulaji1">Mänty</label><br>
@@ -107,10 +123,15 @@
             <input type="radio" id="puulaji3" name="puu" value="vaahtera">
             <label for="puulaji3">Vaahtera</label><br>
             <br>
-            <p id="tulos4"></p>
-            <input type="submit" value="Vastaa 4/5"><br>
+            <button type="button" onclick="f04()">Tarkista vastaus</button>
             <br>
+            <p id="tulos4"></p>
+            <br>
+            <button onclick="next()">Seuraava</button>
+          </div>
             <!--Viides kysymys-->
+          <div id="q4" class="question">
+            <h4>5/5</h4>
             <p>Kuinka pitkä Suomi on?</p>
             <input type="radio" id="pituus1" name="suomi" value="910km">
             <label for="pituus1">910km</label><br>
@@ -119,12 +140,15 @@
             <input type="radio" id="pituus3" name="suomi" value="1360km">
             <label for="pituus3">1360km</label><br>
             <br>
-            <p id="tulos5"></p>
-            <input type="submit" value="Vastaa 5/5"><br>
+            <button type="button" onclick="f05()">Tarkista vastaus</button>
             <br>
+            <p id="tulos5"></p>
+            <br>
+            <button onclick="next()">Next Question</button>
           </div>
+        </div>
           <!--Pisteet ja selitys-->
-        <div class="col-sm-3">
+        <div class="col-sm-5">
             <h4>Sinun pisteesi:</h4>
             <p></p>
           <!--Kuva-->
@@ -132,8 +156,7 @@
           <a href="https://pixabay.com/photos/moose-trees-forest-wildlife-autumn-6704543/" target="_new">(Pixabay 2022.)</a>
         </div>
       </div>
-    </div>  
-          
+    </div>      
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
