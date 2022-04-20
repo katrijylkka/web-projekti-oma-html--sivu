@@ -79,18 +79,18 @@ h2 {
 
 .game-question-container {
 	width: 80%;
-	height: 50%;
+	height: 30%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: lightskyblue;
-	border-radius: 50px;
+	border-radius: 30px;
 }
 
 .game-question-container h1 {
 	font-size: 30px;
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 }
 
 .game-options-container {
