@@ -3,6 +3,7 @@
 [class^="col"] {
 	border: 1px solid black;
 	background-color: lightskyblue;
+
 }
 
 [class^="navbar"] {
@@ -52,7 +53,7 @@ h2 {
 }
 
 .game-quiz-container {
-	width: 40rem;
+	width: 45rem;
 	height: 30rem;
 	background-image: url(/Viihde/images/filmirulla.jpg);
 	display: flex;

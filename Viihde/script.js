@@ -69,7 +69,6 @@ function myNextQuestion(index) {
     myQuestions()
     let currentQuestion = vaihtuvatKysymykset[index]
     document.getElementById("question-number").innerHTML = questionNumber
-    document.getElementById("player-score").innerHTML = playerScore
     document.getElementById("display-question").innerHTML = currentQuestion.question;
     document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
