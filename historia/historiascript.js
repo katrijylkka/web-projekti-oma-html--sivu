@@ -1,6 +1,6 @@
 /* Tähän väliin tulee Historia osion Java-script  */
 /*Java-script tiedoston toteuttamiseen lainattu seuraavaa koodia:*/
-/* Kevin Birggs 2016. Youtube-video. Javascript Tutioral: Make a quiz. Hakupäivä:22.4.2022  */ 
+/* Kevin Birggs 2016. Youtube-video. Javascript Tutioral: Make a quiz. Hakupäivä:22.4.2022. https://www.youtube.com/watch?v=C7NsIRhoWuE  */ 
 
 /*Pelin runko*/
 

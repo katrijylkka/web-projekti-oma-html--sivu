@@ -1,20 +1,30 @@
-/* html- sivun tyylit */
+/* Tässä bodyn, sarakkeiden ja navigaation tyylimuotoiluja */
+
+body {
+  background-image: url(../historia/soldier-gbef6f6e7d_1280.jpg) ;
+  background-color:white;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:cover, auto;
+  background-repeat: no-repeat;
+}
+
+[class^="col-sm-12"]{
+  border-radius: 70px;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
 
 [class^="col"]{
     border: 1px solid black;
     background-color: lightskyblue;
-   ;    
-    }
-
-[class^= "question-container"]{
-  display: flex;
-  width: 10px; 
-  background-image: url(../historia/winter-gca5ffd5a3_1920.jpg)  
+    opacity: 95%;   
 }
 
-.question-container{
-  background-image: url(./historia/winter-gca5ffd5a3_1920.jpg);
-} 
+[class^="col-sm-6"] {
+  border-radius: 7%;
+  margin-top:  2px;
+}
 
 [class^= "navbar"]{
   margin:auto;
@@ -23,121 +33,99 @@
   font-size: 40px;
 }
 
-/*Tähän ensimmäisen sarakkeen tyylejä*/
+/*Fontit*/
+
+h1{
+  text-align: center;
+  font-size: 80px;
+  color: rgb(75, 82, 89);
+}
+
+h2{
+  font-style: none;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(75, 82, 89);
+  margin-bottom: 10px;
+}
+
+h3{
+text-align: center;
+font-style: none;
+font-size: small;
+font-size: 20px;
+color: rgb(75, 82, 89);
+margin-bottom: 20px;
+}
+
+p{
+  text-align: center;
+}
+
+/*Historia-etusivun nappi*/
 
 .button {
   border: solid 3px aliceblue;
   background-color: aliceblue;
+  color: black;
   border-radius: 50px;
-  padding: 90px;
-  margin: auto;
+  padding: 40px;
   text-align: center;
   font-size: 50px;
-  margin-top: 4cm;
-  
-  
+  margin-top: 4cm; 
+  display: grid;
+  text-decoration:none;
+  font-style:unset;
+  font-family:'Courier New', Courier, monospace;
+ 
 }
 
-
-.button:hover
-{
-  border: solid 3px rgb(71, 134, 217) ;
-  background-color: rgb(71, 134, 217); 
+.button:hover{
+  border: solid 3px rgb(75, 82, 89) ;
+  background-color: rgb(75, 82, 89); 
   color: white;
 }
 
-h4{
+#button{
+  border: solid 3px aliceblue;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 50px;
+  padding: 10px;
   text-align: center;
-  font-size: 100px;
-  color: rgb(151, 168, 183);
-  margin-bottom: 30px ;
+  align-items: center;
+  font-size: 50px; 
+  display: flex;
+  text-decoration:none;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px ; 
+  margin-bottom: 1cm;
+  margin-left: 1cm;
 }
 
-h3{
-  text-align: center;
-  font-size: 100px;
-  color: aliceblue;
-  margin-bottom: 30px ;
+/* Historia-etusivun kuva*/
 
-}
-
-.background-image {
-  
-  background-image: url();
+img{
+  position: relative;
   background-repeat: no-repeat;
-  background-size: auto, cover;
-  filter: opacity(0.2) ;
-  opacity: (0.2)
-  
-}
-
-h2{
-  font-size:2cm ;
-  margin-bottom:100px ;
-  text-align: center ;
-  text-decoration: underline;
-}
-
-
-h1{
-  font-size: 20px;
-  color: aliceblue;
-  margin-bottom:1cm;
-  margin-top: 1cm;
-  text-align: center
+  border-radius: 10px;
+  background-size: cover, auto;
+  text-align: center;
+  display: flex;
 }
 
 /*Kysymyslomakkeen tyylit*/
+form{
 
-
-input[type = "radio"]{
-  display:none ;
-
+height:400px;
+overflow-y:auto;
+margin-bottom: 1cm 
 }
 
-label{
-position: relative;
-align-items: center;
-color: rgb(54, 122, 164) ;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-border: 2px solid ;
-border-radius: 20px;
-padding: 8px;
-display: flex;
-padding: 10px, 30px;
-cursor: pointer;
-}
-
-label:before{
-  content: "";
-  height: 30px;
-  width: 30px;
-  border: 4px solid rgb(54, 122, 164);
-  border-radius: 50%;
-  margin-right: 20px ;
-
-}
-
-input[type="radio"]:checked + label{
-  background-color: rgb(54, 122, 164);
-  color: aliceblue;
-}
-
-input[type="radio"]:checked + label:before {
-height: 16px;
-width: 16px;
-border: 10px solid white ;
-background-color: rgb(54, 122, 164);
-
-}
 
 /*Toisen sarakkeen, ensimmäisen rivin tyylit: pisteet */
 
-h3 {
-color: aliceblue;
-text-align: center;
-font-size: 90px ;
-}
+
 
 #number_correct {
 text-align: center;
