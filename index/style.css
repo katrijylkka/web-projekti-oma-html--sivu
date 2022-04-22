@@ -2,7 +2,9 @@
 
 body{
   background-image: url(../index/indeximages/boat-g9ef91cb53_1920.jpg);
-  
+  background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 
