@@ -2,13 +2,19 @@
 
 [class^="col"]{
     border: 1px solid black;
-    background-color: lightskyblue;    
+    background-color: lightskyblue;
+   ;    
     }
 
 [class^= "question-container"]{
   display: flex;
-  width: 10px;    
+  width: 10px; 
+  background-image: url(../historia/winter-gca5ffd5a3_1920.jpg)  
 }
+
+.question-container{
+  background-image: url(./historia/winter-gca5ffd5a3_1920.jpg);
+} 
 
 [class^= "navbar"]{
   margin:auto;
@@ -17,6 +23,28 @@
   font-size: 40px;
 }
 
+/*Tähän ensimmäisen sarakkeen tyylejä*/
+
+.button {
+  border: solid 3px aliceblue;
+  background-color: aliceblue;
+  border-radius: 50px;
+  padding: 90px;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 4cm;
+  
+  
+}
+
+
+.button:hover
+{
+  border: solid 3px rgb(71, 134, 217) ;
+  background-color: rgb(71, 134, 217); 
+  color: white;
+}
 
 h4{
   text-align: center;
@@ -33,14 +61,14 @@ h3{
 
 }
 
-#historiakuva{
-border-radius: 50%;
-width: 70%;
-height: auto;
-display: flex;
-margin: auto;
-display: block;
-
+.background-image {
+  
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  filter: opacity(0.2) ;
+  opacity: (0.2)
+  
 }
 
 h2{
@@ -52,49 +80,80 @@ h2{
 
 
 h1{
-  font-size: 2cm;
+  font-size: 20px;
   color: aliceblue;
-  margin-bottom:2cm;
+  margin-bottom:1cm;
+  margin-top: 1cm;
   text-align: center
 }
 
+/*Kysymyslomakkeen tyylit*/
 
 
-.pelicontainer {
-width:fit-content;
-height: fit-content;
-display: flex;
-justify-content: center;
+input[type = "radio"]{
+  display:none ;
+
+}
+
+label{
+position: relative;
 align-items: center;
-max-width:50px ;
-margin: 50px;
-background: white;
-} 
-
-.flex-column{
-  display: flex;
-  flex-direction: column;
+color: rgb(54, 122, 164) ;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border: 2px solid ;
+border-radius: 20px;
+padding: 8px;
+display: flex;
+padding: 10px, 30px;
+cursor: pointer;
 }
 
-.flex-center {
+label:before{
+  content: "";
+  height: 30px;
+  width: 30px;
+  border: 4px solid rgb(54, 122, 164);
+  border-radius: 50%;
+  margin-right: 20px ;
 
-  justify-content: center;
-  align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
+input[type="radio"]:checked + label{
+  background-color: rgb(54, 122, 164);
+  color: aliceblue;
 }
 
-.text-center{
+input[type="radio"]:checked + label:before {
+height: 16px;
+width: 16px;
+border: 10px solid white ;
+background-color: rgb(54, 122, 164);
+
+}
+
+/*Toisen sarakkeen, ensimmäisen rivin tyylit: pisteet */
+
+h3 {
+color: aliceblue;
+text-align: center;
+font-size: 90px ;
+}
+
+#number_correct {
+text-align: center;
+color: aliceblue;
+font-size: 100px;
+}
+
+/*Toisen sarakkeen, toisen rivin tyylit: Palauteteksi ja kuva*/
+#message{
+  margin-top: 40px;
+  text-align: center;
+  color:black;
+  font-size: larger;
+  font-family: 'Fredoka One', cursive;
+}
+
+#picture{
   text-align: center;
 }
-
-.hidden{
-  display: none;
-}
-
-/*Pelin CSS*/
-
-
-
