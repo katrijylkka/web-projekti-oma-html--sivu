@@ -1,0 +1,28 @@
+
+/* navbarin tyyli */
+
+[class^="col"] {
+	border: 1px solid black;
+	background-color: lightskyblue;
+}
+
+[class^="navbar"] {
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 40px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: lightskyblue;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+h2 {
+    text-align: center;
+
+}
