@@ -17,7 +17,8 @@
 
 body {
     font-family: sans-serif;
-    background: linear-gradient(70deg, lightskyblue,#DCDCDC);
+    background: url(/musiikki/elvis.jpg);
+    color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +28,7 @@ body {
 h1{
   text-align: center;
   font-size: 100px;
-  color: rgb(151, 168, 183);
+  color: WhiteSmoke;
   margin-bottom: 30px ;
 }
 
@@ -38,9 +39,67 @@ text-align: center;
 button{
     padding: 0.2rem 1.5rem;
     border: 1px solid black;
-    outline: none;
     font-size: 1.5rem;
     border-radius: 1.5rem;
     color: black;
     background: #F5F5DC;
+}
+#question{
+    margin-bottom: 1rem;
+}
+.option{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    width: 15rem;
+    background: #F5F5DC;
+    border-radius: 2rem;
+    border: 1px solid black;
+    color: black
+}
+.questions{
+    margin: 3rem auto;
+    padding: 2rem;
+    background: lightskyblue;
+    border-radius: 1rem;
+    cursor: default;
+}
+#scoreboard{
+    width: 20rem;
+    background: url(/musiikki/soittaja1.jpg);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
+}
+#answerBank{
+    width: 20rem;
+    background: url(/musiikki/saxo.jpg);
+    color: black;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
+}
+.option:hover{
+    color:  DodgerBlue;
+}
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+}
+#score-title{
+    margin: 1rem 0;
+}
+#score-btn,#check-answer{
+    margin-top: 1rem;
 }
