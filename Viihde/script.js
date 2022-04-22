@@ -46,14 +46,14 @@ let questions = [
     }
 ]
 //Kysymykset päättyy
-let vaihtuvatKysymykset = [] //Määritetään tyhjä muuttuja vaihtuville kysymyksille
+let changeQuestions = [] //Määritetään tyhjä muuttuja vaihtuville kysymyksille
 
 function myQuestions() { 
     //funktio viidelle kysymykselle
-    while (vaihtuvatKysymykset.length <= 4) {
+    while (changeQuestions.length <= 4) {
         let random = questions[Math.floor(Math.random() * questions.length)]
-        if (!vaihtuvatKysymykset.includes(random)) {
-            vaihtuvatKysymykset.push(random)
+        if (!changeQuestions.includes(random)) {
+            changeQuestions.push(random)
         }
     }
 }
@@ -67,7 +67,7 @@ let indexNumber = 0 //seuraava kysymys
 // funktion seuraavan kysymyksen suorittamiseksi in the array
 function myNextQuestion(index) {
     myQuestions()
-    let currentQuestion = vaihtuvatKysymykset[index]
+    let currentQuestion = changeQuestions[index]
     document.getElementById("question-number").innerHTML = questionNumber
     document.getElementById("display-question").innerHTML = currentQuestion.question;
     document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
@@ -79,7 +79,7 @@ function myNextQuestion(index) {
 
 
 function answerCheck() {
-    let currentQuestion = vaihtuvatKysymykset[indexNumber] 
+    let currentQuestion = changeQuestions[indexNumber] 
     let currentQuestionAnswer = currentQuestion.correctOption 
     let options = document.getElementsByName("option");
     let correctOption = "";
@@ -187,7 +187,7 @@ function closeScoreModal() {
     playerScore = 0
     wrongAttempt = 0
     indexNumber = 0
-    vaihtuvatKysymykset = []
+    changeQuestions = []
     myNextQuestion(indexNumber)
     document.getElementById('score-modal').style.display = "none"
 }
