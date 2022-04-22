@@ -1,7 +1,7 @@
 /* Tässä bodyn, sarakkeiden ja navigaation tyylimuotoiluja */
 
 body {
-  background-image: url(../historia/soldier-gbef6f6e7d_1280.jpg) ;
+  background-image: url(../historia/images/soldier-gbef6f6e7d_1280.jpg) ;
   background-color:white;
   background-repeat: no-repeat;
   position: relative;
@@ -10,9 +10,11 @@ body {
 }
 
 [class^="col-sm-12"]{
+  
   border-radius: 70px;
   margin-bottom: 7px;
   margin-top: 10px;
+  
 }
 
 [class^="col"]{
@@ -58,6 +60,13 @@ color: rgb(75, 82, 89);
 margin-bottom: 20px;
 }
 
+h4{
+  text-align: center;
+  font-style: none;
+  font-size: 40px;
+  color: aliceblue;
+}
+
 p{
   text-align: center;
 }
@@ -100,7 +109,13 @@ p{
   font-family:'Courier New', Courier, monospace;
   font-size: 20px ; 
   margin-bottom: 1cm;
-  margin-left: 1cm;
+  margin-left: 5cm;
+}
+
+#button:hover{
+  border: solid 3px green ;
+  background-color: green; 
+  color: white;
 }
 
 /* Historia-etusivun kuva*/
@@ -116,10 +131,11 @@ img{
 
 /*Kysymyslomakkeen tyylit*/
 form{
-
-height:400px;
-overflow-y:auto;
-margin-bottom: 1cm 
+  height:400px;
+  overflow-y:auto;
+  margin-bottom: 1cm;
+  align-items: center;
+  text-align: center; 
 }
 
 
@@ -129,7 +145,7 @@ margin-bottom: 1cm
 
 #number_correct {
 text-align: center;
-color: aliceblue;
+color: rgb(75, 82, 89);;
 font-size: 100px;
 }
 
@@ -137,11 +153,19 @@ font-size: 100px;
 #message{
   margin-top: 40px;
   text-align: center;
-  color:black;
+  color:rgb(75, 82, 89);;
   font-size: larger;
   font-family: 'Fredoka One', cursive;
+  margin-top: 1px ;
 }
 
 #picture{
   text-align: center;
+  align-items: center;
+  display: grid;
+  width: 9cm;
+  height: 9cmcm;
+  margin-bottom: 1cm ;
+  margin-left: 4cm;
+  border-radius: 95%;
 }

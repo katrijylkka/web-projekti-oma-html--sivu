@@ -45,7 +45,6 @@
         </div>
       </nav>
       <!--Navigointi päättyy-->
-      <h4>Historia</h4>
       <!--Sisältö alkaa-->
       <!--Pää Container-->
     <div class="container">
@@ -53,8 +52,8 @@
         <div class= "row">
             <div class="col-sm-12" id="otsikkorivi">
               <h1>Suomi-tietovisa</h1>
-              <h2>Historia</h2>
-              <h3>Vastaa alla oleviin monivalintakysymyksiin</h3>
+                <h2>Historia</h2> 
+                  <h3>Vastaa alla oleviin monivalintakysymyksiin</h3>
             </div>
         </div>
         <!--Tämä on rivi, missä mihin, tulee tietovisa, kuva ja pisteet-->
@@ -66,18 +65,17 @@
             <form id = "quiz" name = "quiz">
 
               <p class = "questions"> <h3>Mikä seuraavista on toiminut suomen epävirallisena pääkaupunkina ennen Helsinkiä?</h3></p>
-              <div class="radio">
-              <input type = "radio" id = "a" name = "question1" value = "porvoo"> 
-                <label for="a">Porvoo</label> 
+                <input type = "radio"  id="a" name = "question1"  value = "porvoo"  > 
+                <label  for="a">Porvoo</label>
                 <input type = "radio" id = "a" name = "question1" value = "kokkola"> 
                 <label for="a">Kokkola</label>
                 <input type = "radio" id = "a" name = "question1" value = "turku"> 
                 <label for="a">Turku</label>
                 <input type = "radio" id = "a" name = "question1" value = "eimikaan"> 
                 <label for="a">Ei mikään näistä</label>
-              </div>
-              <br>
-              <br>
+                
+              
+              <hr>
               <p class = "questions"><h3>Mikä valuutta Suomessa käytössä, ennen euron käyttöönottoa?</h3></p>
                 <input type = "radio" id = "b" name = "question2" value = "raha"> 
                 <label for="b">Raha</label>
@@ -87,8 +85,7 @@
                 <label for="b">Kruunu</label>
                 <input type = "radio" id = "b" name = "question2" value = "punta"> 
                 <label for="b">Punta</label>
-              <br>
-              <br>
+              <hr>
               <p class = "questions"><h3>Väinö Linna oli yksi Suomen tunnetuimmista kirjailijoista, yksi hänen teoksistaan on:</h3></p>
                 <input type = "radio" id = "c" name = "question3" value = "uusitestamentti"> 
                 <label for="c">Uusi Testamentti</label>
@@ -98,8 +95,7 @@
                 <label for="c">Kalevala</label>
                 <input type = "radio" id = "c" name = "question3" value = "seitsemanveljesta"> 
                 <label for="c">Seitsemän veljestä</label>
-              <br>
-              <br>
+              <hr>
               <p class = "questions"><h3>Kuka seuraavista on toiminut Suomen presidenttinä?</h3></p>
                 <input type = "radio" id = "d" name = "question4" value = "sibelius"> 
                 <label for="d">Jean sibelius</label>
@@ -109,8 +105,7 @@
                 <label for="d">Paavo Nurmi</label>
                 <input type = "radio" id = "d" name = "question4" value = "taalasmaa"> 
                 <label for="d">Ulla Taalasmaa</label>
-              <br>
-              <br>
+              <hr>
               <p class = "questions"><h3>Minä vuonna Suomi itsenäistyi</h3></p>
                 <input type = "radio" id = "e" name = "question5" value = "vuosi"> 
                 <label for="e">1917</label>
@@ -120,8 +115,7 @@
                 <label for="e">1944</label>
                 <input type = "radio" id = "e" name = "question5" value = "2019"> 
                 <label for="e">2019</label>
-              <br>
-              <br>
+              <hr>
               <input id = "button" type = "button" value = "PALAUTA VASTAUKSET" onclick = "check();">
               </form>
             <link rel="stylesheet" href="../historia/images/fail.webp">
@@ -130,7 +124,7 @@
             <div class="col-sm-6">
                 <!--Tähän riville Pisteet-->
                 <div class="row">
-                  <H3>Pisteet</H3>
+                  <h4>Pisteet</h4>
                   <div id = "after_submit"></div>
                   <p id = "number_correct"></p>
                   <br>

@@ -1,5 +1,10 @@
 /* html- sivun tyylit */
 
+body{
+  background-image: url(../index/indeximages/boat-g9ef91cb53_1920.jpg);
+  
+}
+
 
 [class^="col"]{
     border: 1px solid black;
