@@ -57,9 +57,26 @@
             </div>
         </div>
         <!--Tämä on rivi, missä mihin, tulee tietovisa, kuva ja pisteet-->
+
         <div class= "row">
           <!--Tietovisan oma sarake-->
           <div class="col-sm-6" >
+            <div class="row">
+
+              <div id="hud">
+                
+                <div id="hud-item">
+                  <p id="progressText" class="hud-prefix">
+                    Question
+                  </p>
+                  <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
             <br>
             <br>
             <form id = "quiz" name = "quiz">
@@ -73,7 +90,7 @@
                 <label for="a">Turku</label>
                 <input type = "radio" id = "a" name = "question1" value = "eimikaan"> 
                 <label for="a">Ei mikään näistä</label>
-                
+                <p id = "feedback1"></p>
               
               <hr>
               <p class = "questions"><h3>Mikä valuutta Suomessa käytössä, ennen euron käyttöönottoa?</h3></p>
@@ -85,6 +102,8 @@
                 <label for="b">Kruunu</label>
                 <input type = "radio" id = "b" name = "question2" value = "punta"> 
                 <label for="b">Punta</label>
+                <br>
+                <p id = "feedback2"></p>
               <hr>
               <p class = "questions"><h3>Väinö Linna oli yksi Suomen tunnetuimmista kirjailijoista, yksi hänen teoksistaan on:</h3></p>
                 <input type = "radio" id = "c" name = "question3" value = "uusitestamentti"> 
@@ -95,6 +114,8 @@
                 <label for="c">Kalevala</label>
                 <input type = "radio" id = "c" name = "question3" value = "seitsemanveljesta"> 
                 <label for="c">Seitsemän veljestä</label>
+                <br>
+                <p id = "feedback3"></p>
               <hr>
               <p class = "questions"><h3>Kuka seuraavista on toiminut Suomen presidenttinä?</h3></p>
                 <input type = "radio" id = "d" name = "question4" value = "sibelius"> 
@@ -105,30 +126,35 @@
                 <label for="d">Paavo Nurmi</label>
                 <input type = "radio" id = "d" name = "question4" value = "taalasmaa"> 
                 <label for="d">Ulla Taalasmaa</label>
+                <br>
+                <p id = "feedback4"></p>
               <hr>
               <p class = "questions"><h3>Minä vuonna Suomi itsenäistyi</h3></p>
                 <input type = "radio" id = "e" name = "question5" value = "vuosi"> 
                 <label for="e">1917</label>
-                <input type = "radio" id = "e" name = "question5" value = "1936"> 
+                <input type = "radio" id = "e" name = "question5" value = "vuosi1"> 
                 <label for="e">1936</label>
-                <input type = "radio" id = "e" name = "question5" value = "1944"> 
+                <input type = "radio" id = "e" name = "question5" value = "vuosi2"> 
                 <label for="e">1944</label>
-                <input type = "radio" id = "e" name = "question5" value = "2019"> 
+                <input type = "radio" id = "e" name = "question5" value = "vuosi3"> 
                 <label for="e">2019</label>
+                <br>
+                <p id = "feedback4"></p>
               <hr>
               <input id = "button" type = "button" value = "PALAUTA VASTAUKSET" onclick = "check();">
               </form>
-            <link rel="stylesheet" href="../historia/images/fail.webp">
+            >
+            
           </div>  
             <!--Kuva ja pisteiden oma sarake-->
             <div class="col-sm-6">
                 <!--Tähän riville Pisteet-->
-                <div class="row">
+                <div class="row">  
                   <h4>Pisteet</h4>
                   <div id = "after_submit"></div>
                   <p id = "number_correct"></p>
                   <br>
-                 <!--Tähän palautetekdti ja kuva--> 
+                 <!--Tähän palauteteksti ja kuva--> 
                 </div>    
                 <div class="row">
                       <p id = "message"></p>

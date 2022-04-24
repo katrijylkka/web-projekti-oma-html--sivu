@@ -2,6 +2,11 @@
 
 body{
   background-image: url(../index/indeximages/boat-g9ef91cb53_1920.jpg);
+  background-color: #cccccc;
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover
   
 }
 
@@ -22,8 +27,9 @@ body{
 h1{
   text-align: center;
   font-size: 100px;
-  color: rgb(151, 168, 183);
+  color: aliceblue;
   margin-bottom: 30px ;
+  text-shadow: 0 0 6px black;
 }
 
 h2{
