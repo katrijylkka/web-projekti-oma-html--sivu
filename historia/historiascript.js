@@ -24,17 +24,17 @@ const palauteKuvaViis = "../historia/images/goodjob.gif";
 
 const empty = "Et vastannut tähän kysymykseen"
 
-const feedback1 = "Väärin. Oikea vastaus on Turku."
-const feedback2 = "Väärin. Oikea vastaus on Markka."
-const feedback3 = "Väärin. Oikea vastaus on Tuntematon Sotilas."
-const feedback4 = "Väärin. Oikea vastaus on Pehr Evind Svinhufvud."
-const feedback5 = "Väärin. Oikea vastaus on 1917."
+const wrong1 = "Väärin. Oikea vastaus on Turku."
+const wrong2 = "Väärin. Oikea vastaus on Markka."
+const wrong3 = "Väärin. Oikea vastaus on Tuntematon Sotilas."
+const wrong4 = "Väärin. Oikea vastaus on Pehr Evind Svinhufvud."
+const wrong5 = "Väärin. Oikea vastaus on 1917."
 
 const correct1 = "Oikein. Turku toimi Suomen epävirallisena pääkaupunkina ennen Helsinkiä. "
 const correct2 = "Oikein. Ennen euroa Suomessa toimi valuuttana Markka."
 const correct3 = "Oikein. Tuntemattoman sotilas ilmesty vuonna 1954. "
 const correct4 = "Oikein. Svinhufvud toimi kolmantena presidenttinä vuosina: 1931–1937. "
-const correct5 = "Oikein. Suomi itsenäistyi vuonna 1917. "
+const correct5 = "Oikein. Suomi itsenäistyi vuonna 1917."
 
 /* Tässä funktio */ 
 /*muuttujat*/
@@ -45,7 +45,7 @@ function check(){
 	var question2 = document.quiz.question2.value;
 	var question3 = document.quiz.question3.value;
   	var question4 = document.quiz.question4.value;
-  	var question5 = document.quiz.question4.value;
+  	var question5 = document.quiz.question5.value;
 	var correct = 0;
 
 // Oikeiden vastausten määrittely
@@ -56,7 +56,7 @@ function check(){
 	}
 		else if (question1 == "") {document.getElementById("feedback1").innerHTML = empty;
 		}
-		else  { document.getElementById("feedback1").innerHTML = feedback1;
+		else {document.getElementById("feedback1").innerHTML = wrong1;
 		}
 		
 
@@ -64,9 +64,9 @@ function check(){
 		correct++;
 		document.getElementById("feedback2").innerHTML = correct2;
 	}	
-		else if (question1 == "") {document.getElementById("feedback2").innerHTML = empty;
+		else if (question2 == "") {document.getElementById("feedback2").innerHTML = empty;
 		}	
-		else { document.getElementById("feedback2").innerHTML = feedback2;
+		else { document.getElementById("feedback2").innerHTML = wrong2;
 		}
 
 		
@@ -74,40 +74,51 @@ function check(){
 		correct++;
 		document.getElementById("feedback3").innerHTML = correct3;
 	}
-		else if (question1 == "") {document.getElementById("feedback3").innerHTML = empty;
+	
+		else if (question3 == "") {document.getElementById("feedback3").innerHTML = empty;
 		}
-		else { document.getElementById("feedback3").innerHTML = feedback3;
+		else { document.getElementById("feedback3").innerHTML = wrong3;
 		}
 
 
 	if (question4 == "svinhufvud") {
 		correct++;
 		document.getElementById("feedback4").innerHTML = correct4;
-		}
-		else if (question1 == "") {document.getElementById("feedback4").innerHTML = empty;
-		}
-		else { document.getElementById("feedback4").innerHTML = feedback4;
-		}
-		
-		
-	if (question5 == "vuosi") {
-		correct++;
-		document.getElementById("feedback5").innerHTML = correct5;
 	}
-		else if (question1 == "") {document.getElementById("feedback5").innerHTML = empty;
+		else if (question4 == "") {document.getElementById("feedback4").innerHTML = empty;
 		}
-		else { document.getElementById("feedback5").innerHTML = feedback5;
-		}	
+		else { document.getElementById("feedback4").innerHTML = wrong4;
+		}
+		
+		
+	if (question5 === "vuosi") {
+		correct++;
+		document.getElementById("feedback5").innerHTML = correct5
+	}
+		else if (question5 == "") {document.getElementById("feedback5").innerHTML = empty;
+		}
+		else { document.getElementById("feedback5").innerHTML = wrong5;
+		}
+		
+		
+// Radiobuttonien sulku vastaamisen jälkeen.
+
+//const radios = Array.from(document.querySelectorAll(quiz>input[type=radio]));
+
+//document.querySelector("quiz").addEventListener("palautaVastaukset",e=>{
+//  e.preventDefault();
+//  radios.forEach(r=>r.disabled=true)
+//})
 
 //Progress-bar
 
-progresbar= [question1, question2, question3, question4, question5]
-answers=[]
-for (i=0; i<progresbar.lenght; i++) {
-	let j=5-i
-	var questionsleft= '[' + j + 'kysymyksiä jäljellä]';
-	answers.push(promt(progresbar[i] + " " + questionsleft));
-}
+//progresbar= [question1, question2, question3, question4, question5]
+//answers=[]
+//for (i=0; i<progresbar.lenght; i++) {
+//	let j=5-i
+//	var questionsleft= '[' + j + 'kysymyksiä jäljellä]';
+//	answers.push(promt(progresbar[i] + " " + questionsleft));
+//}
 
 
 // Pistemäärä määrittää saadun, palautetekstin ja kuvan
@@ -135,7 +146,7 @@ var score;
 	}  
 
 	if (correct == 5) {
-		score == 4; 
+		score = 4; 
 }
 
 
@@ -143,6 +154,6 @@ var score;
 // Tulostukset yms.
 	document.getElementById("after_submit").style.visibility = "visible";
 	document.getElementById("message").innerHTML = messages[score];
-	document.getElementById("number_correct").innerHTML =  correct;
+	document.getElementById("number_correct").innerHTML = correct;
 	document.getElementById("picture").src = pictures[score];
 }
