@@ -19,7 +19,7 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     text-align: center;
-    padding-bottom: 20px;
+    
     text-shadow: 2px 2px 4px black;
 }
 
@@ -30,11 +30,12 @@ h4 {
 
 /*Navbar muotoilu*/
 [class^="navbar"] {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: auto;
     
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 40px;
-    text-shadow: 2px 2px 4px white;
+
     background-color: lightskyblue;
     
     
@@ -44,31 +45,43 @@ h4 {
 [class*="col"] {
     color:black;
     background-color: lightskyblue;
-    padding-left: 20px;
-    padding-block-end: 50px;
-    font-size: 20px;
-    font-weight: 500;
+    border: 1px solid black;
+    
+    font-size: 25px;
+    
     text-align: center;
     opacity: 0.9;
 }
 
+/*.background-image {
+    background-image: url("images/luonto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}*/
 
 /*Taustaväri sivulle*/
 body {
     background-image: url("images/luonto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /*background-image: url("images/luonto.jpg");
     background-color: #cccccc;
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    background-size:cover
+    background-size:cover*/
   }
 
 /*Tekijä*/
 footer{
     padding-top: 10px;
     text-align: center;
-    color: white;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px white;
 }
 
 
