@@ -17,7 +17,7 @@
 
 body {
     font-family: sans-serif;
-    background: url(/musiikki/elvis.jpg);
+    background: url(elvis.jpg);
     color: black;
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@ button{
 }
 #scoreboard{
     width: 20rem;
-    background: url(/musiikki/soittaja1.jpg);
+    background: url(soittaja1.jpg);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -76,7 +76,7 @@ button{
 }
 #answerBank{
     width: 20rem;
-    background: url(/musiikki/saxo.jpg);
+    background: url(saxo.jpg);
     color: black;
     padding: 2rem;
     text-align: center;
