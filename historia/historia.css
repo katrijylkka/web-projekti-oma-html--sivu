@@ -202,42 +202,11 @@ float: left;
 
 /*Toisen sarakkeen, toisen rivin tyylit: Palauteteksi ja kuva*/
 
-#hud{
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.hud-prefix{
-  text-align: center;
-  font-size: 1cm;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.hud-main-text{
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace ;
-}
-
-
-#progressBar {
-  height: 40px;
-  width: 300px; 
-  border: 2px solid black;
-  margin-top: 2px;
-  border-radius: 50px;
-  overflow:hidden;
-}
-
-#progressBarFull{
-  height: 100%;
-  background: black;
-  width: 0%;
-}
 
 #message{
   margin-top: 10px;
-  text-align: center;
+  margin-left: 12px;
+  text-align: left;
   color:rgb(75, 82, 89);
   font-size: larger;
   font-family: 'Fredoka One', cursive;
@@ -264,5 +233,6 @@ float: left;
   margin-top: 15px;
   margin-left:12px; 
   object-fit: scale-down;
+  border-color: black;
 }
 

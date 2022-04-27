@@ -1,26 +1,32 @@
 /* Tähän väliin tulee Historia osion Java-script  */
-/*Java-script tiedoston toteuttamiseen lainattu osittain seuraavaa koodia:*/
-/* Kevin Birggs 2016. Youtube-video. Javascript Tutioral: Make a quiz. Hakupäivä:22.4.2022. https://www.youtube.com/watch?v=C7NsIRhoWuE  */ 
+	/*Java-script tiedoston toteuttamiseen kokonaisuudessa mallinnettu osittain seuraavaa koodia:*/
+	/* Kevin Birggs 2016. Youtube-video. Javascript Tutioral: Make a quiz. Hakupäivä:22.4.2022. https://www.youtube.com/watch?v=C7NsIRhoWuE  */ 
 
 /*Pelin runko*/
 
-/* Tähän määritelty viestit */
+/* Tähän määritelty viestit, jotka tulevat oikeanpuoleiseen sarakkeeseen */
 
-const palauteYks= "Vastaathan kysymyksiin, ennen visan palauttamista";
+const palauteYks= "Vaatii petrausta!";
 const palauteKaks= "Pystyt parempaan!";
 const palauteKolme= "Ihan ok, mutta pystytkö parempaan?";
 const palauteNelja= "Hienoa!";
 const palauteViis = "Loisto suoritus!";
 
-/*Gif-imaget palautteissa*/ 
+/*Gif-imaget palautteissa, gif-kuvien linkit*/ 
 
 const palauteKuvaYks = "../historia/images/odotan.gif";
 const palauteKuvaKaks = "../historia/images/fail.gif";
 const palauteKuvaKolme = "../historia/images/ok.gif";
-const palauteKuvaNelja = "../historia/images/bravo.gif";
+const palauteKuvaNelja = "../historia/images/bravo.gif"; 
 const palauteKuvaViis = "../historia/images/goodjob.gif";
 
-/*Tähän määritelty palautteet oikeista ja vääristä vastauksista*/ 
+const linkki1 = "Giphy. Cabin Fever Reaction GIF. <br> giphy.com"
+const linkki2 = "SpongeBob SquarePants.Fail Patrick Star GIF By SpongeBob SquarePants. <br> giphy.com"
+const linkki3 = "Giphy. Meme Reaction GIF. <br> giphy.com"
+const linkki4 = "Sky.Harry Potter Lol GIF By Sky . <br> giphy.com"
+const linkki5 = "Americas Got Talent.Happy Simon Cowell GIF By America's Got Talent . <br> giphy.com"
+
+/*Tähän määritelty palautteet oikeista ja vääristä vastauksista, palautteet tulevat kysymysten alle, kun olet vastannut.*/ 
 
 const empty = "Et vastannut tähän kysymykseen"
 
@@ -37,20 +43,22 @@ const correct4 = "Oikein. Svinhufvud toimi kolmantena presidenttinä vuosina: 19
 const correct5 = "Oikein. Suomi itsenäistyi vuonna 1917."
 
 /* Tässä funktio */ 
-/*muuttujat*/
+/*Muuttujat */
 
 function check(){
 
-	var question1 = document.quiz.question1.value;
-	var question2 = document.quiz.question2.value;
-	var question3 = document.quiz.question3.value;
-  	var question4 = document.quiz.question4.value;
-  	var question5 = document.quiz.question5.value;
-	var correct = 0;
+
+var question1 = document.quiz.question1.value;
+var question2 = document.quiz.question2.value;
+var question3 = document.quiz.question3.value;
+var question4 = document.quiz.question4.value;
+var question5 = document.quiz.question5.value;
+var correct = 0;
+	
 
 // Oikeiden vastausten määrittely
 
-	if (question1 == "turku") {
+	if (question1 == "turku" ) {
 		document.getElementById("feedback1").innerHTML = correct1;
 		correct++;	
 	}
@@ -58,6 +66,7 @@ function check(){
 		}
 		else {document.getElementById("feedback1").innerHTML = wrong1;
 		}
+		
 		
 
 	if (question2 == "markka") {
@@ -99,27 +108,40 @@ function check(){
 		}
 		else { document.getElementById("feedback5").innerHTML = wrong5;
 		}
+
+// Kun kysymysten vastaukset on palautettu (inputs), lukitaan kysymykset (inputs[i].disabled = true)
+		// Tässä koodin osassa mallinnettu koodia
+		// David Thomas. JavaScript-koodi. Hakupäivä 27.4.2022. http://jsfiddle.net/davidThomas/rHfus/.
+
+var inputs1 = document.getElementsByName('question1');
+var inputs2 = document.getElementsByName('question2');
+var inputs3 = document.getElementsByName('question3');
+var inputs4 = document.getElementsByName('question4');
+var inputs5 = document.getElementsByName('question5');
+
+
+	for (var i = 0, len = inputs1.length; i<len; i++){
+			inputs1[i].disabled = true;
+	}
+
+	for (var i = 0, len = inputs2.length; i<len; i++){
+			inputs2[i].disabled = true;
+	}
+
+	for (var i = 0, len = inputs3.length; i<len; i++){
+			inputs3[i].disabled = true;
+	}
+
+
+	for (var i = 0, len = inputs4.length; i<len; i++){
+			inputs4[i].disabled = true;
+	}
+
+	for (var i = 0, len = inputs5.length; i<len; i++){
+			inputs5[i].disabled = true;
+	}
+
 		
-		
-// Radiobuttonien sulku vastaamisen jälkeen.
-
-//const radios = Array.from(document.querySelectorAll(quiz>input[type=radio]));
-
-//document.querySelector("quiz").addEventListener("palautaVastaukset",e=>{
-//  e.preventDefault();
-//  radios.forEach(r=>r.disabled=true)
-//})
-
-//Progress-bar
-
-//progresbar= [question1, question2, question3, question4, question5]
-//answers=[]
-//for (i=0; i<progresbar.lenght; i++) {
-//	let j=5-i
-//	var questionsleft= '[' + j + 'kysymyksiä jäljellä]';
-//	answers.push(promt(progresbar[i] + " " + questionsleft));
-//}
-
 
 // Pistemäärä määrittää saadun, palautetekstin ja kuvan
 	
