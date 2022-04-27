@@ -2,6 +2,7 @@
 
 body{
   background-image: url(../index/indeximages/boat-g9ef91cb53_1920.jpg);
+  opacity: 0.9;
   background-color: #cccccc;
   height: fit-content;
   background-position: center;
