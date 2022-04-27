@@ -60,12 +60,14 @@ button{
     margin: 3rem auto;
     padding: 2rem;
     background: lightskyblue;
+    opacity: 0.9;
     border-radius: 1rem;
     cursor: default;
 }
 #scoreboard{
     width: 20rem;
     background: url(soittaja1.jpg);
+    opacity: 0.9;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -77,6 +79,7 @@ button{
 #answerBank{
     width: 20rem;
     background: url(saxo.jpg);
+    opacity: 0.9;
     color: black;
     padding: 2rem;
     text-align: center;
