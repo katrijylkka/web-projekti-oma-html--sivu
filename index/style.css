@@ -1,49 +1,49 @@
 /* html- sivun tyylit */
 
+/* html- sivun tyylit */
+
 body{
-  background-image: url(../index/indeximages/boat-g9ef91cb53_1920.jpg);
-  opacity: 0.9;
-  background-color: #cccccc;
-  height: fit-content;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover
+	background-image: url(../index/indeximages/boat-g9ef91cb53_1920.jpg);
+	background-color: #cccccc;
+	height: fit-content;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover
+	
+  }
   
-}
-
-
+  
 [class^="col"]{
-    border: 1px solid black;
-    background-color: lightskyblue;    
-    }
-
-
-[class^= "navbar"]{
-     margin: auto;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     font-size: 40px;
-}
-
-h1{
-  text-align: center;
-  font-size: 100px;
-  color: aliceblue;
-  margin-bottom: 30px ;
-  text-shadow: 0 0 6px black;
-}
-
-h2{
-text-align: center;
-font-family: 'Fredoka One', cursive;
-color: rgb(255, 255, 255);
-text-decoration: underline;   
-}
-
-p {
-  margin-top: 1cm;
-  text-align: center;
-  font-size: larger;
+	border: 1px solid black;
+	background-color: lightskyblue;    
+	}
   
-
-}
+  
+[class^= "navbar"]{
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 40px;
+  }
+  
+h1{
+	text-align: center;
+	font-size: 100px;
+	color: aliceblue;
+	margin-bottom: 30px ;
+	text-shadow: 0 0 6px black;
+	font-family: 'Fredoka One', cursive;
+  }
+  
+h2{
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	color: rgb(255, 255, 255);
+	text-decoration: none;   
+  }
+  
+  p {
+	margin-top: 1cm;
+	text-align: center;
+	font-size: larger;
+  }
