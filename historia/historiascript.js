@@ -8,7 +8,7 @@
 
 const palauteYks= "Vaatii  petrausta! <br> <h6>GIF= Giphy. Cabin Fever Reaction GIF. <br> giphy.com </h6>";
 const palauteKaks= "Pystyt  parempaan! <br> <h6>SpongeBob SquarePants.Fail Patrick Star GIF By SpongeBob SquarePants. <br> giphy.com </h6>";
-const palauteKolme= "Ihan ok, mutta pystytkö br parempaan? <br> <h6>Giphy. Meme Reaction GIF. <br> giphy.com</h6>";
+const palauteKolme= "Ihan ok, mutta pystytkö  parempaan? <br> <h6>Giphy. Meme Reaction GIF. <br> giphy.com</h6>";
 const palauteNelja= "Hienoa! <br> <h6>Sky.Harry Potter Lol GIF By Sky . <br> giphy.com</h6>";
 const palauteViis = "Loisto suoritus! <br> <h6>Americas Got Talent.Happy Simon Cowell GIF By America's Got Talent . <br> giphy.com</h6>";
 
@@ -105,13 +105,6 @@ function check(){
 			}
 			else { document.getElementById("feedback5").innerHTML = wrong5;
 			}
-
-// Kun kysymystä clickataan tulostuu edistymiseen kuinka monta kysymystä kokonaismäärästä on jäljellä.
-
-
-
-		
-
 
 // Kun kysymysten vastaukset on palautettu (inputs), lukitaan kysymykset (inputs[i].disabled = true)
 		// Tässä koodin osassa mallinnettu koodia
