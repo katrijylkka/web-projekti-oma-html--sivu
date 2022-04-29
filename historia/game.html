@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,172 +11,151 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/0a63504743.js" crossorigin="anonymous"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
   </head>
-<body>
-    <!-- Navigointi alkaa -->
+  <body>
+    <!-- Navigointi alkaa, navigointi toteutettu Bootstrapin avulla ja siihen on linkitetty visan sivustot. -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index/index.html">Etusivu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../luonto/luonto.html">Luonto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../historia/historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="" >Urheilu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../musiikki/musiikki.html" >Musiikki</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Viihde/viihde.html" >Viihde</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../tietoja/tietoja.html" >Tietoja</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index/index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../luonto/luonto.html">Luonto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../historia/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" >Urheilu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../musiikki/musiikki.html" >Musiikki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Viihde/viihde.html" >Viihde</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../tietoja/tietoja.html" >Tietoja</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!--Navigointi päättyy-->
-      <!--Sisältö alkaa-->
-      <!--Pää Container-->
+      </div>
+    </nav>
+    <!--Navigointi päättyy-->
+    <!--Sisältö alkaa-->
+    <!--Pääcontainer, rivien ja sarakkeiden luomisessa käytetty Bootstappiä-->
     <div class="container">
-        <!--Tässä On rivi, missä näkyy koko tietovisan nimi-->
-        <div class= "row">
-            <div class="col-sm-12" id="otsikkorivi">
-              <h1>Suomi-tietovisa</h1>
-                <h2>Historia <i class="fa-solid fa-chess-rook"></i></h2> 
-                  <h3>Vastaa alla oleviin monivalintakysymyksiin <br> selaamalla alaspäin.</h3>
-            </div>
+      <!--Tässä on otsikkorivi, missä näkyy koko tietovisan nimi-->
+      <div class= "row">
+        <div class="col-sm-12" id="otsikkorivi">
+          <h1>Suomitietovisa <br><i class="fa-solid fa-chess-rook fa-beat"></i></h1>
+            <h2>Historia </h2> 
+              <h3>Vastaa alla oleviin monivalintakysymyksiin <br> selaamalla alaspäin.</h3>
         </div>
-        <!--Tämä on rivi, missä mihin, tulee tietovisa, kuva ja pisteet-->
-
-        <div class= "row">
-          <!--Tietovisan oma sarake-->
-          <div class="col-sm-6" >
-            <div class="row">
-
-              <h4>Pisteet</h4>
-              <div id = "after_submit"></div>
-              <p id = "number_correct"></p>
-
-
-
-              <!--<div id="hud">
-                
-                <div id="hud-item">
-                  <p id="progressText" class="hud-prefix">
-                    Question
-                  </p>
-                  <div id="progressBar">
-                    <div id="progressBarFull"></div>
-                  </div>
-                </div>
-
-              </div> -->
-              
-            </div>
+      </div>
+      <!--Tämä rivi johon tulee tietovisa-->
+      <div class= "row">
+        <!--Tietovisan oma sarake-->
+        <div class="col-sm-6" >
+          <div class="row">
+            <!--Rivillä näkyy mihin tulostuu edistyminen ja saadut pisteet -->
+            <h4>Pisteet: <p id = "numberCorrect"> </h4>
+            <h4>Edistyminen: <p id="progressField">0</p></h4>
+              <div id = "afterSubmit"> </div>            
+          </div>
+          <br>
+          <br>
+          <!-- Kysymyslomake, joka pitää sisällään radiobuttonryhmiä 5kpl.-->
+          <!--Radiobuttoneiden onclick tapahtuma, kasvattaa edistymistä (progress) funktion check2 avulla-->
+          <!-- Id feedbackeihin tulostuu palaute sen jälkeen, kun funktio check on toteutunut, palaute vaihtelee, jos kysymys on: oikein, väärin tai tyhjä.-->
+          <form id = "quiz" name = "quiz">  
+            <p class = "questions"> <h3> <br> Mikä seuraavista on toiminut Suomen epävirallisena pääkaupunkina ennen Helsinkiä?</h3></p>
+              <input type = "radio"  id="a" name = "question1"  value = "porvoo" onclick="check2();"> 
+              <label  for="a">Porvoo</label>
+              <input type = "radio" id = "a" name = "question1" value = "kokkola" onclick="check2();"> 
+              <label for="a">Kokkola</label>
+              <input type = "radio" id = "a" name = "question1" value = "turku" onclick="check2();"> 
+              <label for="a">Turku</label>
+              <input type = "radio" id = "a" name = "question1" value = "eimikaan" onclick="check();"> 
+              <label for="a">Ei mikään näistä</label>
+            <p id = "feedback1"></p>
+            <hr>
+            <p class = "questions"><h3>Mikä valuutta Suomessa oli käytössä ennen euron käyttöönottoa?</h3></p>
+              <input type = "radio" id = "b" name = "question2" value = "raha" onclick="check2();" > 
+              <label for="b">raha</label>
+              <input type = "radio" id = "b" name = "question2" value = "markka" onclick="check2();"> 
+              <label for="b">markka</label>
+              <input type = "radio" id = "b" name = "question2" value = "kruunu" onclick="check2();"> 
+              <label for="b">kruunu</label>
+              <input type = "radio" id = "b" name = "question2" value = "punta" onclick="check2();"> 
+              <label for="b">punta</label>
             <br>
+            <p id = "feedback2"></p>
+            <hr>
+            <p class = "questions"><h3>Väinö Linna oli yksi Suomen tunnetuimmista kirjailijoista, yksi hänen teoksistaan on:</h3></p>
+              <input type = "radio" id = "c" name = "question3" value = "uusitestamentti" onclick="check2();"> 
+              <label for="c">Uusi Testamentti</label>
+              <input type = "radio" id = "c" name = "question3" value = "tuntematon" onclick="check2();">
+              <label for="c">Tuntematon sotilas</label>
+              <input type = "radio" id = "c" name = "question3" value = "kalevala" onclick="check2();"> 
+              <label for="c">Kalevala</label>
+              <input type = "radio" id = "c" name = "question3" value = "seitsemanveljesta" onclick="check2();"> 
+              <label for="c">Seitsemän veljestä</label>
             <br>
-            <form id = "quiz" name = "quiz">
-              
-              <p class = "questions"> <h3> <br> Mikä seuraavista on toiminut suomen epävirallisena pääkaupunkina ennen Helsinkiä?</h3></p>
-              
-                <input type = "radio"  id="a" name = "question1"  value = "porvoo"  > 
-                <label  for="a">Porvoo</label>
-                <input type = "radio" id = "a" name = "question1" value = "kokkola"> 
-                <label for="a">Kokkola</label>
-                <input type = "radio" id = "a" name = "question1" value = "turku"> 
-                <label for="a">Turku</label>
-                <input type = "radio" id = "a" name = "question1" value = "eimikaan"> 
-                <label for="a">Ei mikään näistä</label>
-                <p id = "feedback1"></p>
-               
-              
-              <hr>
-              <p class = "questions"><h3>Mikä valuutta Suomessa käytössä, ennen euron käyttöönottoa?</h3></p>
-                <input type = "radio" id = "b" name = "question2" value = "raha"> 
-                <label for="b">Raha</label>
-                <input type = "radio" id = "b" name = "question2" value = "markka"> 
-                <label for="b">Markka</label>
-                <input type = "radio" id = "b" name = "question2" value = "kruunu"> 
-                <label for="b">Kruunu</label>
-                <input type = "radio" id = "b" name = "question2" value = "punta"> 
-                <label for="b">Punta</label>
-                <br>
-                <p id = "feedback2"></p>
-              <hr>
-              <p class = "questions"><h3>Väinö Linna oli yksi Suomen tunnetuimmista kirjailijoista, yksi hänen teoksistaan on:</h3></p>
-                <input type = "radio" id = "c" name = "question3" value = "uusitestamentti"> 
-                <label for="c">Uusi Testamentti</label>
-                <input type = "radio" id = "c" name = "question3" value = "tuntematon">
-                <label for="c">Tuntematon sotilas</label>
-                <input type = "radio" id = "c" name = "question3" value = "kalevala"> 
-                <label for="c">Kalevala</label>
-                <input type = "radio" id = "c" name = "question3" value = "seitsemanveljesta"> 
-                <label for="c">Seitsemän veljestä</label>
-                <br>
-                <p id = "feedback3"></p>
-              <hr>
-              <p class = "questions"><h3>Kuka seuraavista on toiminut Suomen presidenttinä?</h3></p>
-                <input type = "radio" id = "d" name = "question4" value = "sibelius"> 
-                <label for="d">Jean sibelius</label>
-                <input type = "radio" id = "d" name = "question4" value = "svinhufvud"> 
-                <label for="d">Pehr Evind Svinhufvud</label>
-                <input type = "radio" id = "d" name = "question4" value = "nurmi"> 
-                <label for="d">Paavo Nurmi</label>
-                <input type = "radio" id = "d" name = "question4" value = "taalasmaa"> 
-                <label for="d">Ulla Taalasmaa</label>
-                <br>
-                <p id = "feedback4"></p>
-              <hr>
-              <p class = "questions"><h3>Minä vuonna Suomi itsenäistyi?</h3></p>
-                <input type = "radio" id = "e" name = "question5" value = "vuosi"> 
-                <label for="e">1917</label>
-                <input type = "radio" id = "e" name = "question5" value = "vuosi1"> 
-                <label for="e">1936</label>
-                <input type = "radio" id = "e" name = "question5" value = "vuosi2"> 
-                <label for="e">1944</label>
-                <input type = "radio" id = "e" name = "question5" value = "vuosi3"> 
-                <label for="e">2019</label>
-                <br>
-              <p id = "feedback5"></p>
-              <hr>
-        
-              <input id = "button" type = "button" value = "PALAUTA VASTAUKSET" onclick = "check();">
-              <a href="../historia/historia.html" class="buttonAgain">PELAA UUDELLEEN</a>
-              
-              </form>
-  
-          </div>  
-            <!--Kuva ja pisteiden oma sarake-->
-            <div class="col-sm-6">
-                <!--Tähän riville Pisteet-->
-                <div class="row">  
-
-                  <img id="picture">
-                  <br>
-                  <p id = "message"></p>
-                 
-                </div>    
-                
-                </div>
-            </div>
+            <p id = "feedback3"></p>
+            <hr>
+            <p class = "questions"><h3>Kuka seuraavista on toiminut Suomen presidenttinä?</h3></p>
+              <input type = "radio" id = "d" name = "question4" value = "sibelius" onclick="check2();"> 
+              <label for="d">Jean sibelius</label>
+              <input type = "radio" id = "d" name = "question4" value = "svinhufvud" onclick="check2();"> 
+              <label for="d">Pehr Evind Svinhufvud</label>
+              <input type = "radio" id = "d" name = "question4" value = "nurmi" onclick="check2();"> 
+              <label for="d">Paavo Nurmi</label>
+              <input type = "radio" id = "d" name = "question4" value = "taalasmaa" onclick="check2();"> 
+              <label for="d">Ulla Taalasmaa</label>
+            <br>
+            <p id = "feedback4"></p>
+            <hr>
+            <p class = "questions"><h3>Minä vuonna Suomi itsenäistyi?</h3></p>
+              <input type = "radio" id = "e" name = "question5" value = "vuosi" onclick="check2();"> 
+              <label for="e">1917</label>
+              <input type = "radio" id = "e" name = "question5" value = "vuosi1" onclick="check2();" > 
+              <label for="e">1936</label>
+              <input type = "radio" id = "e" name = "question5" value = "vuosi2" onclick="check2();"> 
+              <label for="e">1944</label>
+              <input type = "radio" id = "e" name = "question5" value = "vuosi3" onclick="check2();"> 
+              <label for="e">2019</label>
+            <br>
+            <p id = "feedback5"></p>
+            <hr>
+            <!--Tässä on painike, joka käynnistää funktion "check"-->
+            <input id = "button" type = "button" value = "Palauta vastaukset" onclick = "check();">
+            <!--Tässä on painike, jolla päästään historiasivun etusivulle, mikäli haluaa pelata pelin uudelleen-->
+            <a href="../historia/historia.html" class="buttonAgain">Pelaa uudelleen</a>    
+          </form>
+        </div>  
+        <!-- Tässä alkaa vasemmanpuoleinen sarake, johon ilmestyy check-funktion päätteeksi kuva-->
+        <div class="col-sm-6">
+          <div class="row">  
+            <img id="picture">
+            <br>
+            <p id = "message"></p>
+          </div>    
         </div>
-        
-
+      </div>
+    </div>
     <!--Bootstrapin JS-tiedosto-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--Historian oma script-->
     <script src="historiascript.js"></script>   
-</body>
+  </body>
 </html>

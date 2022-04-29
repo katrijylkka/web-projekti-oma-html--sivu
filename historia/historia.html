@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,80 +10,80 @@
     <link rel="stylesheet" href="historia.css">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/0a63504743.js" crossorigin="anonymous"></script>
+    <!--Google Fontsi-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  </head>
-    
-<body>
-    <!-- Navigointi alkaa -->
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  </head>   
+  <body>
+    <!-- Navigointi alkaa, navigointi toteutettu Bootstrapin avulla ja siihen on linkitetty visan sivustot.-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index/index.html">Etusivu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="..\luonto\luonto.html">Luonto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../historia/historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="..urheilu\urheilu.html" >Urheilu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="..\musiikki\musiikki.html" >Musiikki</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="..\Viihde\Viihde.html" >Viihde</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../tietoja/tietoja.html" >Tietoja</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index/index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\luonto\luonto.html">Luonto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../historia/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..urheilu\urheilu.html" >Urheilu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\musiikki\musiikki.html" >Musiikki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\Viihde\Viihde.html" >Viihde</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../tietoja/tietoja.html" >Tietoja</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!--Navigointi päättyy-->
-
-      <!--Sisältö alkaa-->
-      <!--Pää Container-->
+      </div>
+    </nav>
+    <!--Navigointi päättyy-->
+    <!--Sisältö alkaa-->
+    <!--Pääcontainer-->
     <div class="container">
-        <!--Tässä On rivi, missä näkyy koko tietovisan nimi-->
-        <div class= "row">
-            <div class="col-sm-12" id="otsikkorivi">
-                <h1>Suomi-tietovisa</h1>
-                <h2>Historia <i class="fa-solid fa-chess-rook"></i></h2> 
-                <h3>Mitä sinä tiedät Suomen historiasta. Vastaa monivalintakysymyksiin ja testaa osaamisesi</h3>
-            </div>
+      <!--Tässä On rivi, missä näkyy koko tietovisan nimi-->
+      <div class= "row">
+        <div class="col-sm-12" id="otsikkorivi">
+          <h1>Suomi-tietovisa 
+          <br> 
+            <i class="fa-solid fa-chess-rook fa-beat"></i>
+          </h1>
+            <h2>Historia </h2> 
+            <h3>Mitä sinä tiedät Suomen historiasta? Vastaa monivalintakysymyksiin ja testaa osaamisesi!</h3>
         </div>
-        <!--Tämä on rivi, missä mihin, tulee tietovisa, kuva ja pisteet-->
-        <div class= "row">
-            <!--Tietovisan oma sarake-->
-            <div class="col-sm-6" id="question-container">
-                      <a href="../historia/game.html" class="button">Aloita Peli!</a>
-            </div>     
-            <!--Kuva ja pisteiden oma sarake-->
-            <div class="col-sm-6">
-                <!--Tähän riville kuva-->
-                <div class="row" >
-                   <br>  
-                </div>  
-                <div class="row" id="another-container">
-                    <img src="../historia/images/finland-g34578b960_1280.jpg" alt="historiankuva" id="historiakuva">
-                    <p>Tämän sivun kuvat: Pixabay.com</p>
-                </div>        
-                </div>
-            </div>
+      </div>
+      <!--Tämä on rivi, missä näkyy kuva ja aloituspainike-->
+      <div class= "row">
+        <!--Alotuspainikkeen oma sarake-->
+        <div class="col-sm-6" id="question-container">
+          <a href="../historia/game.html" class="button">Aloita Peli!</a>
+        </div>     
+        <!--Kuvan sarake-->
+        <div class="col-sm-6">
+          <div class="row"></div>
+            <p>Tämän sivun kuvat: Pixabay.com</p>
+          <div class="row" id="another-container">
+            <img src="../historia/images/finland-g34578b960_1280.jpg" alt="historiankuva" id="historiakuva">
+            <p><br></p>
+          </div>        
         </div>
+      </div>
+    </div>
     <!--Bootstrapin JS-tiedosto-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--Historian oma script-->
     <script src="historiascript.js"></script>   
-</body>
+  </body>
 </html>

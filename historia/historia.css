@@ -18,9 +18,9 @@ body {
 }
 
 [class^="col"]{
-    border: 1px solid black;
-    background-color: lightskyblue;
-    opacity: 87%;   
+  border: 1px solid black;
+  background-color: lightskyblue;
+  opacity: 87%;   
 }
 
 [class^="col-sm-6"] {
@@ -35,43 +35,64 @@ body {
   font-size: 40px;
 }
 
+[class^= ".row>*"] {
+  box-sizing: border-box none;
+}
+
 /*Fontit*/
 
 h1{
   text-align: center;
-  font-size: 60px;
-  color: rgb(75, 82, 89);
-  font-family: 'Fredoka One', cursive;
+  font-size: 40px;
+  color: white;
+  font-family: 'Orelega One', cursive;
+  text-shadow: 0 0 6px black;
+
 }
 
 h2{
   font-style: none;
   text-align: center;
   font-size: 40px;
-  color: rgb(75, 82, 89);
+  color: white;
   margin-bottom: 10px;
+  font-family: 'Orelega One', cursive;
+  text-shadow: 0 0 6px black;
   
 }
 
 h3{
-text-align: center;
-font-style: none;
-font-size: small;
-font-size: 20px;
-color: rgb(75, 82, 89);
-margin-bottom: 20px;
+  text-align: center;
+  font-style: none;
+  font-size: small;
+  font-size: 20px;
+  color: rgb(75, 82, 89);
+  margin-bottom: 20px;
+
 
 }
 
 h4{
-  text-align: left;
-  float: left;
+  text-align: center;
   margin-left: 1cm;
-  
+  font-style: none;
+  font-size: 30px;
+  color: aliceblue; 
+}
+
+
+h5{
+  text-align: right;
+  float: right ;
+  margin-right: 1cm;
   font-style: none;
   font-size: 30px;
   color: aliceblue;
-  
+  margin-top: 2px; 
+}
+
+h6 {
+  font-size: x-small;
 }
 
 p{
@@ -80,9 +101,9 @@ p{
 
 
 
+
+
 /*Historia-etusivun nappi*/
-
-
 
 .button {
   border: solid 3px aliceblue;
@@ -96,8 +117,7 @@ p{
   display: grid;
   text-decoration:none;
   font-style:unset;
-  font-family:'Courier New', Courier, monospace;
- 
+  font-family:'Orelega One', cursive;
 }
 
 .button:hover{
@@ -105,6 +125,8 @@ p{
   background-color: rgb(75, 82, 89); 
   color: white;
 }
+
+/*Vastauksienpalautusnappi*/
 
 #button{
   border: solid 3px aliceblue;
@@ -117,12 +139,11 @@ p{
   font-size: 50px; 
   display: flex;
   text-decoration:none;
-  font-family:'Courier New', Courier, monospace;
+  font-family:'Orelega One', cursive;;
   font-size: 20px ; 
   margin-bottom: 1cm;
   width: fit-content;
-  float: left;
-  
+  float: left; 
 }
 
 #button:hover{
@@ -130,6 +151,8 @@ p{
   background-color: green; 
   color: white;
 }
+
+/*Pelin uudelleen aloittamisnappi*/
 
 .buttonAgain{
   border: solid 3px aliceblue;
@@ -143,12 +166,10 @@ p{
   font-size: 50px; 
   display: flex;
   text-decoration:none;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Orelega One', cursive;
   font-size: 20px ; 
   width:fit-content;
   float: right;
-  
-
 }
 
 .buttonAgain:hover{
@@ -161,6 +182,7 @@ p{
 /* Historia-etusivun kuva*/
 
 img{
+  margin-top: 50px;
   position: relative;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -170,6 +192,7 @@ img{
 }
 
 /*Kysymyslomakkeen tyylit*/
+
 form{
   height:400px;
   overflow-y:auto;
@@ -188,17 +211,31 @@ input[type='radio'], label{
   color: blue;
 }
 
+.p{
+  text-align: center;
+  align-items: center;
+  display: grid;
+  color: rgb(75, 82, 89);
+  font-family: 'Fredoka One', cursive; ; 
+}
 
-/*Toisen sarakkeen, ensimmäisen rivin tyylit: pisteet */
 
+/*Pisteet ja edistyminen */
 
+#numberCorrect {
+  text-align: center;
+  color: rgb(75, 82, 89);;
+  font-size: 50px;
+  margin-top: none;
+  float: initial;
+  ;
+}
 
-#number_correct {
-text-align:left;
-margin-left: 2cm;
-color: rgb(75, 82, 89);;
-font-size: 50px;
-float: left;
+#progressField {
+
+  text-align: center;
+  color: rgb(75, 82, 89);;
+  font-size: 50px; 
 }
 
 /*Toisen sarakkeen, toisen rivin tyylit: Palauteteksi ja kuva*/
@@ -207,23 +244,13 @@ float: left;
 #message{
   margin-top: 10px;
   margin-left: 12px;
-  text-align: left;
+  text-align: center;
   color:rgb(75, 82, 89);
-  font-size: larger;
-  font-family: 'Fredoka One', cursive;
+  font-size: 40px;
+  font-family: 'Orelega One', cursive;
   margin-top: 1px ;
 }
 
-#p{
-  text-align: center;
-  align-items: center;
-  display: grid;
-  width: 9cm;
-  height: auto;
-  margin-bottom: 1cm ;
-  margin-left: 4cm;
-  border-radius: 95%;
-}
 
 #picture{
   text-align: center;
@@ -233,7 +260,6 @@ float: left;
   height: 10cm;
   margin-top: 15px;
   margin-left:12px; 
-  object-fit: scale-down;
-  border-color: black;
+  object-fit:scale-down;
 }
 
