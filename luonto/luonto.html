@@ -9,12 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--CSS tiedoston linkitys-->
     <link rel="stylesheet" href="styles.css">
+    <!--Font awesome ja Google Fonts-->
     <script src="https://kit.fontawesome.com/2a94011b7a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 
-    <title>Luonto tietovisa</title>
+    <title>Luontotietovisa</title>
   </head>
   <body>
     <!--Navbar-->
@@ -51,18 +52,16 @@
         </div>
       </nav>
       <br>
-      
-      
     <div class="container">
       <div class="row">
         <!--Kysymykset ja vastausvaihtoehdot-->
         <div class="col-sm">
           <div>
-            <h1>Suomi tietovisa</h1>
+            <h1>Suomitietovisa</h1>
             <i class="fa-solid fa-cat fa-bounce"></i>
             <h2>Luonto</h2>
-            
           </div>
+
           <!--Ensimmäinen kysymys-->
           <div id="q0" class="question active">
             <h4>1/5</h4>
@@ -154,9 +153,8 @@
             <button onclick="next()">Lopeta tietovisa</button>
             <p></p>
           </div>
-           <!--Pisteet-->
-           <!--tämä vielä vaiheessa-->
-           <div id="q5" class="question">
+           <!--Pisteet ja palaute-->
+          <div id="q5" class="question">
             <h4>Tietovisa loppui!</h4>
             <p>Alla olevasta napista voit tarkistaa kokonaispisteesi</p>
             <br>
@@ -167,29 +165,13 @@
             <button onclick="history.go(0)">Yritä uudestaan</button>
             <p></p>
           </div>
-
-          <!--</div>
-          Pisteet ja selitys
-          <div class="col-sm-5">
-            <h4>Sinun pisteesi:</h4>
-            <p></p>
-          
-          <a href="https://pixabay.com/photos/moose-trees-forest-wildlife-autumn-6704543/" target="_new">(Pixabay 2022.)</a>-->
         </div>
       </div>
     </div>      
-    <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
     <footer>
-      Valtteri Jaskari, 2022
+      Valtteri Jaskari
     </footer>
     <!--Javascript linkitys-->
     <script src="script.js"></script>
