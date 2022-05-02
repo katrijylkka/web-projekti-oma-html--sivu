@@ -1,5 +1,7 @@
 //Koodissa käytetty apuna käyttäjän "WEB HUB" youtubevideota https://youtu.be/2jwdyO_UunE
 
+
+//Määritellään muuttujat
 let question = document.getElementById('question');
 let quizContainer = document.getElementById('quiz-container');
 let scorecard = document.getElementById('scorecard');
@@ -17,7 +19,7 @@ let i = 0;
 let score = 0;
 
 //Kysymyskenttä
-let kysymysPatteri = [
+let quizPattern = [
     {
         question : 'Mistä kaupungista artisti Antti Tuisku on alunperin kotoisin?',
         option : ['Oulu','Rovaniemi','Kirkkonummi','Vaasa'],
@@ -49,17 +51,17 @@ function displayQuestion(){
     for(let a=0;a<span.length;a++){
         span[a].style.background='none';
     }
-    question.innerHTML=' '+kysymysPatteri[i].question;
-    option0.innerHTML= kysymysPatteri[i].option[0];
-    option1.innerHTML= kysymysPatteri[i].option[1];
-    option2.innerHTML= kysymysPatteri[i].option[2];
-    option3.innerHTML= kysymysPatteri[i].option[3];
-    stat.innerHTML= "Kysymys"+' '+(i+1)+' '+'/'+' '+kysymysPatteri.length;
+    question.innerHTML=' '+quizPattern[i].question;
+    option0.innerHTML= quizPattern[i].option[0];
+    option1.innerHTML= quizPattern[i].option[1];
+    option2.innerHTML= quizPattern[i].option[2];
+    option3.innerHTML= quizPattern[i].option[3];
+    stat.innerHTML= "Kysymys"+' '+(i+1)+' '+'/'+' '+quizPattern.length;
 }
 
 //Lasketaan oikeat vastaukset
 function calcScore(e){
-    if(e.innerHTML===kysymysPatteri[i].answer && score<kysymysPatteri.length)
+    if(e.innerHTML===quizPattern[i].answer && score<quizPattern.length)
     {
         score= score+1;
         document.getElementById(e.id).style.background= 'lime';
@@ -72,13 +74,13 @@ function calcScore(e){
 
 //Siirrytään seuraavaan kysymykseen
 function nextQuestion(){
-    if(i<kysymysPatteri.length-1)
+    if(i<quizPattern.length-1)
     {
         i=i+1;
         displayQuestion();
     }
     else{
-        points.innerHTML= score+ '/'+ kysymysPatteri.length;
+        points.innerHTML= score+ '/'+ quizPattern.length;
         quizContainer.style.display= 'none';
         scoreboard.style.display= 'block'
     }
@@ -98,13 +100,11 @@ function checkAnswer(){
     let answers= document.getElementById('answers');
     answerBank.style.display= 'block';
     scoreboard.style.display= 'none';
-    for(let a=0;a<kysymysPatteri.length;a++)
+    for(let a=0;a<quizPattern.length;a++)
     {
         let list= document.createElement('li');
-        list.innerHTML= kysymysPatteri[a].answer;
+        list.innerHTML= quizPattern[a].answer;
         answers.appendChild(list);
     }
 }
-
-
 displayQuestion();
