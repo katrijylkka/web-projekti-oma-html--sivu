@@ -36,7 +36,7 @@ let quizPattern = [
         answer : 'Vuodet ollu tuulisii'
     },
     {
-        question : 'Mikä oli soittoennätyksiäkin rikkoneen williamin ensimmäinen iso hitti?',
+        question : 'Mikä oli williamin ensimmäinen iso hitti?',
         option : ['Penelope','Pamela','Pauliina','Pirjo'],
         answer : 'Penelope'
     },
