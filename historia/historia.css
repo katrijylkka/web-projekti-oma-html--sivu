@@ -43,7 +43,7 @@ body {
 
 h1{
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   color: white;
   font-family: 'Orelega One', cursive;
   text-shadow: 0 0 6px black;
@@ -82,8 +82,8 @@ h4{
 
 
 h5{
-  text-align: right;
-  float: right ;
+  text-align: center;
+  float: center ;
   margin-right: 1cm;
   font-style: none;
   font-size: 30px;
@@ -96,7 +96,7 @@ h6 {
 }
 
 p{
-  text-align: center;
+  text-align: center ;
 }
 
 
@@ -199,13 +199,16 @@ form{
   margin-bottom: 1cm;
   align-items: center;
   text-align: center; 
+  display: inline-block;
+  
 }
 
 input[type='radio'], label{   
   vertical-align:-webkit-baseline-middle;
-  display: inline-block;
-  
+  display: inline; 
+  font-size: 20px; 
 }
+
 
 [id^="feedback"]{
   color: blue;
@@ -216,7 +219,7 @@ input[type='radio'], label{
   align-items: center;
   display: grid;
   color: rgb(75, 82, 89);
-  font-family: 'Fredoka One', cursive; ; 
+  font-family: 'Orelega One', cursive; 
 }
 
 
