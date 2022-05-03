@@ -102,6 +102,7 @@ h4 {
 	justify-content: center;
 	background-color: lightskyblue;
 	border-radius: 30px;
+	border: 2px solid rgb(3, 25, 77);
 }
 
 .game-question-container h1 {
