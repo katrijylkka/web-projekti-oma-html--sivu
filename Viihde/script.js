@@ -45,7 +45,7 @@ let questions = [
         correctOption: "optionD"
     }
 ]
-//Kysymykset päättyy
+
 let changeQuestions = [] //Määritetään tyhjä muuttuja vaihtuville kysymyksille
 
 function myQuestions() { 
@@ -195,3 +195,4 @@ function closeScoreModal() {
 function closeOptionModal() {
     document.getElementById('option-modal').style.display = "none"
 }
+// koodi tehty DEV community-sivustoa apuna käyttäen https://dev.to/sulaimonolaniran

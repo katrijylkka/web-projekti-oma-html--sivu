@@ -28,8 +28,13 @@ footer {
 	text-align: center;
 	padding: 0;
 	font-weight: bold;
+	color: white;
+	margin-top: 65px;
 }
-
+p.kuva1 {
+	color: white;
+	font-size: 10px;
+}
 #myQuiz {
 	width: 100%;
 	min-height: 135vh;
@@ -40,7 +45,7 @@ footer {
 	background-color: black;
 	background-image: url(/Viihde/images/teatteri22.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }
 p {
 	text-align: center;
