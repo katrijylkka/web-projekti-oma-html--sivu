@@ -72,7 +72,6 @@ h3{
 
 h4{
   text-align: center;
-  margin-left: 1cm;
   font-style: none;
   font-size: 30px;
   color: aliceblue; 
@@ -198,6 +197,10 @@ form{
   align-items: center;
   text-align: center; 
   display: inline-block;
+  overflow-y: scroll;
+  overflow: auto;
+
+  
   
 }
 
