@@ -59,7 +59,7 @@
         <div class="col-sm-12" id="otsikkorivi">
           <h1>Suomitietovisa <br><i class="fa-solid fa-chess-rook fa-beat"></i></h1>
             <h2>Historia </h2> 
-              <h3>Vastaa alla oleviin monivalintakysymyksiin <br> selaamalla alaspäin.</h3>
+              <h3>Vastaa alla oleviin monivalintakysymyksiin <br> selaamalla alaspäin <br></h3>
         </div>
       </div>
       <!--Tämä rivi johon tulee tietovisa-->
@@ -69,7 +69,7 @@
           <div class="row">
             <!--Rivillä näkyy mihin tulostuu edistyminen ja saadut pisteet -->
             <h4>Pisteet: <p id = "numberCorrect"></p> </h4>
-            <h4>Edistyminen: <p id="progressField">0</p></h4>
+            <h4>Viidestä kysymyksestä olet vastannut: <p id="progressField">0</p></h4>
               <div id = "afterSubmit"> </div>            
           </div>
           <br>
@@ -82,73 +82,73 @@
               <input type = "radio"  id="a" name = "question1"  value = "porvoo" onclick="check2();"> 
               <label  for="a">Porvoo</label>
               <br>
-              <input type = "radio" id = "a" name = "question1" value = "kokkola" onclick="check2();"> 
+              <input type = "radio" id = "b" name = "question1" value = "kokkola" onclick="check2();"> 
               <label for="a">Kokkola</label>
               <br>
-              <input type = "radio" id = "a" name = "question1" value = "turku" onclick="check2();"> 
+              <input type = "radio" id = "c" name = "question1" value = "turku" onclick="check2();"> 
               <label for="a">Turku</label>
               <br>
-              <input type = "radio" id = "a" name = "question1" value = "eimikaan" onclick="check();"> 
-              <label for="a">Ei mikään näistä</label>
+              <input type = "radio" id = "d" name = "question1" value = "eimikaan" onclick="check2();"> 
+              <label for="a">ei mikään näistä</label>
               
             <p id = "feedback1"></p>
             <hr>
             <p class = "questions"><h3>Mikä valuutta Suomessa oli käytössä ennen euron käyttöönottoa?</h3></p>
-              <input type = "radio" id = "b" name = "question2" value = "raha" onclick="check2();" > 
+              <input type = "radio" id = "e" name = "question2" value = "raha" onclick="check2();" > 
               <label for="b">raha</label>
               <br>
-              <input type = "radio" id = "b" name = "question2" value = "markka" onclick="check2();"> 
+              <input type = "radio" id = "f" name = "question2" value = "markka" onclick="check2();"> 
               <label for="b">markka</label>
               <br>
-              <input type = "radio" id = "b" name = "question2" value = "kruunu" onclick="check2();"> 
+              <input type = "radio" id = "g" name = "question2" value = "kruunu" onclick="check2();"> 
               <label for="b">kruunu</label>
               <br>
-              <input type = "radio" id = "b" name = "question2" value = "punta" onclick="check2();"> 
+              <input type = "radio" id = "h" name = "question2" value = "punta" onclick="check2();"> 
               <label for="b">punta</label>
             <br>
             <p id = "feedback2"></p>
             <hr>
             <p class = "questions"><h3>Väinö Linna oli yksi Suomen tunnetuimmista kirjailijoista, yksi hänen teoksistaan on:</h3></p>
-              <input type = "radio" id = "c" name = "question3" value = "uusitestamentti" onclick="check2();"> 
+              <input type = "radio" id = "i" name = "question3" value = "uusitestamentti" onclick="check2();"> 
               <label for="c">Uusi Testamentti</label>
               <br>
-              <input type = "radio" id = "c" name = "question3" value = "tuntematon" onclick="check2();">
+              <input type = "radio" id = "j" name = "question3" value = "tuntematon" onclick="check2();">
               <label for="c">Tuntematon sotilas</label>
               <br>
-              <input type = "radio" id = "c" name = "question3" value = "kalevala" onclick="check2();"> 
+              <input type = "radio" id = "k" name = "question3" value = "kalevala" onclick="check2();"> 
               <label for="c">Kalevala</label>
               <br>
-              <input type = "radio" id = "c" name = "question3" value = "seitsemanveljesta" onclick="check2();"> 
+              <input type = "radio" id = "l" name = "question3" value = "seitsemanveljesta" onclick="check2();"> 
               <label for="c">Seitsemän veljestä</label>
             <br>
             <p id = "feedback3"></p>
             <hr>
             <p class = "questions"><h3>Kuka seuraavista on toiminut Suomen presidenttinä?</h3></p>
-              <input type = "radio" id = "d" name = "question4" value = "sibelius" onclick="check2();"> 
+              <input type = "radio" id = "m" name = "question4" value = "sibelius" onclick="check2();"> 
               <label for="d">Jean sibelius</label>
               <br>
-              <input type = "radio" id = "d" name = "question4" value = "svinhufvud" onclick="check2();"> 
+              <input type = "radio" id = "n" name = "question4" value = "svinhufvud" onclick="check2();"> 
               <label for="d">Pehr Evind Svinhufvud</label>
               <br>
-              <input type = "radio" id = "d" name = "question4" value = "nurmi" onclick="check2();"> 
+              <input type = "radio" id = "o" name = "question4" value = "nurmi" onclick="check2();"> 
               <label for="d">Paavo Nurmi</label>
               <br>
-              <input type = "radio" id = "d" name = "question4" value = "taalasmaa" onclick="check2();"> 
+              <input type = "radio" id = "p" name = "question4" value = "taalasmaa" onclick="check2();"> 
               <label for="d">Ulla Taalasmaa</label>
             <br>
             <p id = "feedback4"></p>
             <hr>
             <p class = "questions"><h3>Minä vuonna Suomi itsenäistyi?</h3></p>
-              <input type = "radio" id = "e" name = "question5" value = "vuosi" onclick="check2();"> 
+              <input type = "radio" id = "q" name = "question5" value = "vuosi" onclick="check2();"> 
               <label for="e">1917</label>
               <br>
-              <input type = "radio" id = "e" name = "question5" value = "vuosi1" onclick="check2();" > 
+              <input type = "radio" id = "r" name = "question5" value = "vuosi1" onclick="check2();" > 
               <label for="e">1936</label>
               <br>
-              <input type = "radio" id = "e" name = "question5" value = "vuosi2" onclick="check2();"> 
+              <input type = "radio" id = "s" name = "question5" value = "vuosi2" onclick="check2();"> 
               <label for="e">1944</label>
               <br>
-              <input type = "radio" id = "e" name = "question5" value = "vuosi3" onclick="check2();"> 
+              <input type = "radio" id = "t" name = "question5" value = "vuosi3" onclick="check2();"> 
               <label for="e">2019</label>
             <br>
             <p id = "feedback5"></p>
