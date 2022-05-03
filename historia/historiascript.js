@@ -32,7 +32,7 @@ const wrong5 = "Väärin. Oikea vastaus on 1917."
 
 const correct1 = "Oikein. Turku toimi Suomen epävirallisena pääkaupunkina ennen Helsinkiä. "
 const correct2 = "Oikein. Ennen euroa Suomessa toimi valuuttana Markka."
-const correct3 = "Oikein. Tuntemattoman sotilas ilmesty vuonna 1954. "
+const correct3 = "Oikein. Tuntemattoman sotilas ilmestyi vuonna 1954. "
 const correct4 = "Oikein. Svinhufvud toimi kolmantena presidenttinä vuosina: 1931–1937. "
 const correct5 = "Oikein. Suomi itsenäistyi vuonna 1917."
 
@@ -181,21 +181,72 @@ function check2(){
 
 	
 	var progress = 0;
-		if (document.getElementById("question1").checked){
+
+		if (document.getElementById("a").checked){
 			progress++;
 		}
-		if (document.getElementById("question2").checked){
+			else if (document.getElementById("b").checked){
+				progress++
+			}
+			else if (document.getElementById("c").checked){
+				progress++
+			}
+			else if (document.getElementById("d").checked){
+				progress++
+			}
+
+		
+		if (document.getElementById("e").checked){
 			progress++;
 		}
-		if (document.getElementById("question3").checked){
+			else if (document.getElementById("f").checked){
+				progress++
+			}
+			else if (document.getElementById("g").checked){
+				progress++
+			}
+			else if (document.getElementById("h").checked){
+				progress++
+			}
+
+		if (document.getElementById("i").checked){
 			progress++;
 		}
-		if (document.getElementById("question4").checked){
+			else if (document.getElementById("j").checked){
+				progress++
+			}
+			else if (document.getElementById("k").checked){
+				progress++
+			}
+			else if (document.getElementById("l").checked){
+				progress++
+			}
+
+		if (document.getElementById("m").checked){
 			progress++;
 		}
-		if (document.getElementById("question5").checked){
+			else if (document.getElementById("n").checked){
+				progress++
+			}
+			else if (document.getElementById("o").checked){
+				progress++
+			}
+			else if (document.getElementById("p").checked){
+				progress++
+			}
+
+		if (document.getElementById("q").checked){
 			progress++;
 		}
+			else if (document.getElementById("r").checked){
+				progress++
+			}
+			else if (document.getElementById("s").checked){
+				progress++
+			}
+			else if (document.getElementById("t").checked){
+				progress++
+			}
 		
 		document.getElementById("progressField").innerHTML= progress;
 }		

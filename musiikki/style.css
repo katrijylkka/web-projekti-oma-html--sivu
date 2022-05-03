@@ -24,6 +24,12 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
 }
+#lahde {
+    font-family: sans-serif;
+    color: #F5F5DC;
+
+
+}
 
 h1{
   text-align: center;
