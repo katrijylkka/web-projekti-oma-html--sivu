@@ -64,7 +64,7 @@ let playerScore = 0  //pelaajan pisteet
 let wrongAttempt = 0 //väärien vastauksien määrä
 let indexNumber = 0 //seuraava kysymys
 
-// funktion seuraavan kysymyksen suorittamiseksi in the array
+//funktion seuraavan kysymyksen suorittamiseksi
 function myNextQuestion(index) {
     myQuestions()
     let currentQuestion = changeQuestions[index]
@@ -151,7 +151,7 @@ function unCheckRadioButtons() {
     }
 }
 
-// funktio kun kaikkiin kysymyksiin on vastattu
+//funktio kun kaikkiin kysymyksiin on vastattu
 function handleEndGame() {
     let remark = "";
     let remarkColor = "";
@@ -195,4 +195,4 @@ function closeScoreModal() {
 function closeOptionModal() {
     document.getElementById('option-modal').style.display = "none"
 }
-// koodi tehty DEV community-sivustoa apuna käyttäen https://dev.to/sulaimonolaniran
+//koodi tehty DEV community-sivustoa apuna käyttäen https://dev.to/sulaimonolaniran
