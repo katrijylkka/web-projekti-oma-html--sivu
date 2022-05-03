@@ -44,3 +44,6 @@ p {
 	text-align: center;
 	font-size: larger;
 }
+#content {
+	border-radius: 50px;
+}
